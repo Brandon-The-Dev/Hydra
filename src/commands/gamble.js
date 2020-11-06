@@ -1,4 +1,3 @@
-  
 const { MessageEmbed } = require("discord.js");
 module.exports.run = async (bot, message, args) => {
     const botRoll = Math.floor(Math.random() * 13)+1;
