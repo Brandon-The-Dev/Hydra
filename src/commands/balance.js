@@ -21,3 +21,4 @@ module.exports.config = {
     bankSpace: 0,
     cooldown: 10
 }
+
