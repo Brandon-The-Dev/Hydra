@@ -9,6 +9,7 @@ module.exports.run = async (bot, message, args) => {
               ];
   let page = 1;
 
+  
   const embed = new Discord.MessageEmbed()
     .setAuthor(`Welcome ${member.user.username} To Hydra+ Shop`)
     .setColor('RANDOM')
