@@ -29,3 +29,4 @@ module.exports.config = {
     bankSpace: 15, // Amount of bank space to give when command is used.
     cooldown: 30 // Command Cooldown
 }
+
