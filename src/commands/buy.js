@@ -3,12 +3,12 @@ const itemss = require('../utils/items');
 module.exports.run = async (bot, message, args) => {
     let user = await bot.fetchUser(message.author.id);
     if (!args.join(' ')) {
-        return message.channel.send("you can't buy nothing lmao");
+        return message.channel.send("you can't buy nothing, please enter the correct item id");
     }
     if (!args[1]) args[1] = '';
     const item = itemss.find(x => x.name.toLowerCase() === args.join(' ').toString().toLowerCase() || x.name.toLowerCase() === args[0].toString().toLowerCase() || x.name.toLowerCase() === `${args[0].toString().toLowerCase()} ${args[1].toString().toLowerCase()}`);
     if (!item) {
-        return message.channel.send("You can't buy an item that doesn't exist");
+        return message.channel.send("You can't buy an item that doesn't exist please use the correct item id");
     }
     if (item.canBuy == false) {
         return message.channel.send(":thinking: You can't buy this item");
@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
     if (!buyAmount) buyAmount=1;
     else buyAmount = buyAmount[0]
     if (item.price > user.coinsInWallet || (buyAmount*item.price) > user.coinsInWallet) {
-        return message.channel.send("This is so sad, YOU'RE TOO POOR");
+        return message.channel.send("You dont have the funds to buy this item.");
     }
     let founditem = user.items.find(x => x.name.toLowerCase() === item.name.toLowerCase());
     let array = [];
