@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
 
   let pages = [
               "🍪 **Cookie - __50__** __coins__\n`id: cookie`\nUse to make you fatter \n🔒 **Padlock - __10__,__000__** __coins__\n`id: padlock`\nUse this to stop those pesky robber\n📜 **Bank Note - __20__,__000__** __coins__\n`id: banknote`\nUse this to increase your back capacity\n🍀 **Lucky Clover - __10__,__000__** __coins__\n`id: luckyclover`\nUse this to increase you chances of robbing",
-              "🔫 **Gun - __22__,__500__** __coins__\n`id: gun`\nUse this to go hunting\n🪓 **Axe - __10__,__000__** __coins__\n`id: axe`\nUse this to cut trees down!\n🎣 **Fishing Rod - __15__,__000__** __coins__\n`id: fishingrod`\nUse this to go fishing!\n⛏️ **Pickaxe - __30__,__000__** __coins__\n`id: pickaxe`\nUse this to mine gems!"
+              "🔫 **Gun - __22__,__500__** __coins__\n`id: gun`\nUse this to go hunting\n🪓 **Axe - __20__,__000__** __coins__\n`id: axe`\nUse this to cut trees down!\n🎣 **Fishing Rod - __15__,__000__** __coins__\n`id: fishingrod`\nUse this to go fishing!\n⛏️ **Pickaxe - __30__,__000__** __coins__\n`id: pickaxe`\nUse this to mine gems!"
               ];
   let page = 1;
 
