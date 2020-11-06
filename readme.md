@@ -1,11 +1,5 @@
 
-
-
-
-
-
-
-
+<a href="https://discord.gg/XqezQaK"><img src="https://p81.cooltext.com/Rendered/Cool%20Text%20-%20Welcome%20To%20Hydra%20367774839786302.png"/></a>
 
 Commands | Infomation
 -----|------------
