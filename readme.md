@@ -6,6 +6,10 @@
 <center><a href="https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456"><img src="https://i.gyazo.com/3ecd8b53e05215ae194530a2d527e61f.png"/></a></center>
 
 <br><br>
+
+You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456) 
+You Can Also Join Our Server Here: [Invite](https://invite.gg/HydraBot)
+
 Commands | Infomation
 -----|------------
 balance | Displays a users balance.
