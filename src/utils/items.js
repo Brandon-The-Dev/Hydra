@@ -169,7 +169,7 @@ const array = [{
     canBuy: true,
     displayOnShop: true,
     sellAmount: 3000,
-    price: 30000,
+    price: 20000,
     keep: true,
     run: async (bot, message, args) => {
         const treeAmount = Math.round(Math.random() * 1) + 1;
