@@ -10,6 +10,7 @@ module.exports = async (bot, message) => {
 
         const command = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd));
         if (command) {
+            bot.commandsUsed += 1;
             if (!bot.cooldowns.has(command.config.name)) {
                 bot.cooldowns.set(command.config.name, new Discord.Collection());
             }
