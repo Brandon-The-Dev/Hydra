@@ -13,6 +13,7 @@ class MongoClient extends Client {
         });
         this.economy = economy;
         this.items = new ItemManager();
+        this.commandsUsed = 1;
     }
 
     /**
