@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { Collection } = require('discord.js');
 const MongoClient = require('./utils/MongoClient');
-const bot = new MongoClient({ ws: { intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS'] }, fetchAllMembers: true });
+const bot = new MongoClient({ ws: { intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS'] }, fetchAllMembers: false });
 
 bot.login(process.env.TOKEN);
 
