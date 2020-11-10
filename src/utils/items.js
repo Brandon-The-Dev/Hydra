@@ -174,7 +174,7 @@ const array = [{
     run: async (bot, message, args) => {
         const treeAmount = Math.round(Math.random() * 1) + 1;
         const data = await bot.fetchUser(message.author.id);
-        message.channel.send(`You went into the woods and chopped dowm **${treeAmount}** tree 🌲`);
+        message.channel.send(`You went into the woods and chopped down **${treeAmount}** tree 🌲`);
         const findItem = data.items.find(i => i.name.toLowerCase() == 'tree');
         let userInv = data.items.filter(i => i.name.toLowerCase() !== 'tree');
         if (findItem) {
