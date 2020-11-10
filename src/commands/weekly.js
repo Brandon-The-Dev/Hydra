@@ -3,7 +3,7 @@ const prettyMilliseconds = require('pretty-ms');
 
 module.exports.run = async (bot, message, args) => {
     let user = await bot.fetchUser(message.author.id);
-    if ((Date.parse(user.WeekStreak) + 604800000) > Date.now()) {
+    if ((Date.parse(user.DailyStreak) + 604800000) > Date.now()) {
         const embed = new MessageEmbed()
             .setTitle('Cooldown')
             .setDescription(`Woah there, you need to wait \`${prettyMilliseconds((Date.parse(user.WeekStreak) + 86400000) - Date.now())}\` before using this command again.
