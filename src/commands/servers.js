@@ -1,5 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-    message.channel.send(`Servers amount: **${bot.guilds.cache.size.toLocaleString()}**\nUsers amount: **${bot.users.cache.size}**`);;
+    message.channel.send(`Servers amount: **${bot.guilds.cache.size.toLocaleString()}**`);;
 }
 module.exports.config = {
     name: 'servers', // Command Name
