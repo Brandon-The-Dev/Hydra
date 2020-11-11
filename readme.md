@@ -1,5 +1,5 @@
 <div align=center>
-<center><a href="https://discord.gg/XqezQaK"><img src="https://p81.cooltext.com/Rendered/Cool%20Text%20-%20Welcome%20To%20Hydra%20367774839786302.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://media.discordapp.net/attachments/717671005941661747/776181978004717618/textfx_4.png"/></a></center>
 
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/269a59919af640e7c80fca0c6d3c2ae9.png"/></a></center>
 
