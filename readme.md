@@ -5,6 +5,12 @@
 
 <center><a href="https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456"><img src="https://i.gyazo.com/c226b9cd0b0412756e7922235a8382e9.png"/></a></center>
 
+<a href="https://top.gg/bot/679710920334639115">
+    <img src="https://top.gg/api/widget/679710920334639115.svg" alt="Hydra+" />
+</a>
+
+
+
 <br><br>
 
 You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456) 
