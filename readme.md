@@ -41,5 +41,6 @@ sell | Allows users to sell items that they have recived or have bought from the
 servers | Allows users to check how many servers the bot is on.
 shop | Displays all the items that are available to be bought.
 use | Allows users to use some items to gain rewards that they are able to sell for coins.
+vote | Allows users to vote for the bot.
 withdraw | Allows users to withdraw coins from there bank.
 work | Allows users to work for coins.
