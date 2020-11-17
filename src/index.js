@@ -3,7 +3,7 @@ const { Collection } = require('discord.js');
 const DBL = require("dblapi.js");
 const MongoClient = require('./utils/MongoClient');
 const bot = new MongoClient({ ws: { intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_MEMBERS'] }, fetchAllMembers: false });
-const dbl = new DBL(process.env.TOPGGWEBHOOK, bot, { webhookPort: 5002, webhookAuth: '${{secrets.AUTH}}' }););
+const dbl = new DBL(process.env.TOPGGWEBHOOK, bot, { webhookPort: 5002, webhookAuth: '${{secrets.AUTH}}' });
 
 bot.login(process.env.TOKEN);
 
