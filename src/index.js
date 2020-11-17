@@ -14,3 +14,11 @@ bot.dbl = dbl;
 
 require('./utils/handlers/command')(bot);
 require('./utils/handlers/event')(bot);
+
+/*dbl.webhook.on('vote', async (vote) => {
+    const user = bot.users.cache.fetch(vote.user);
+    if(user){
+    hook.send(`${user.username} just voted ${bot.user.username}`);
+            }
+})
+*/
