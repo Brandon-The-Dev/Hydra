@@ -48,10 +48,10 @@ module.exports.run = async (bot, message, args) => {
 module.exports.config = {
     name: 'give', // Command Name
     description: 'give user coins.', // Description
-    usage: 'h give <amount>', // Usage
+    usage: 'h give <user> <amount>', // Usage
     botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
-    aliases: [], // Aliases 
+    aliases: ["pay"], // Aliases 
     bankSpace: 0, // Amount of bank space to give when command is used.
     cooldown: 5 // Command Cooldown
 }
