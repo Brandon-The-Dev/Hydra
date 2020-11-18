@@ -29,8 +29,8 @@ module.exports.run = async (bot, message, args) => {
             return message.channel.send(`You tried to rob **${member.user.tag}** but got caught👮! Better luck next time.`);
         }
     }
-    let array = robbedUser.items.filter(x => x.name !== 'Padlock');
-    const padlock = robbedUser.items.find(x => x.name === 'Padlock');
+    let array = robbedUser.items.filter(x => x.name !== 'padlock');
+    const padlock = robbedUser.items.find(x => x.name === 'padlock');
     if (padlock) {
         message.channel.send(`You tried to rob **${member.user.tag}**, but they had a **Padlock**🔒. Try again next time.`);
         if (padlock.amount === 1) {
@@ -40,7 +40,7 @@ module.exports.run = async (bot, message, args) => {
         }
         else {
             array.push({
-                name: 'Padlock',
+                name: 'padlock',
                 amount: padlock.amount - 1,
                 description: padlock.description
             });
