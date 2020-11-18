@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
         return message.channel.send("You don't have that much coins lol");
     }
     if (botRoll < userChoice) {
-        const wonCoins = (betAmount + (betAmount * 0.55));
+        const wonCoins = (betAmount + (betAmount * 0.25));
         userData.coinsInWallet += parseInt(wonCoins);
         await userData.save();
         const wonEmbed = new MessageEmbed()
@@ -47,7 +47,7 @@ module.exports.config = {
     usage: 'h gamble <amount>', // Usage
     botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
-    aliases: ['bet'], // Aliases 
+    aliases: [], // Aliases 
     bankSpace: 5, // Amount of bank space to give when command is used.
     cooldown: 10 // Command Cooldown
 }
