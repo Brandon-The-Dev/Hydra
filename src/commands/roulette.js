@@ -26,13 +26,13 @@ module.exports.run = async (bot, message, args) => {
         let random = Math.floor((Math.random() * 10));
 
         let moneyhelp = new MessageEmbed()
-            .setColor("GREEN")
+            .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
             .setDescription(`❌ Specify an amount to gamble \n\n h roulette <color> <amount>`);
 
         let moneymore = new MessageEmbed()
-            .setColor("GREEN")
+            .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
             .setDescription(`❌ You are betting more than you have`);
