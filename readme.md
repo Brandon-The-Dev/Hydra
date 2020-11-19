@@ -1,6 +1,14 @@
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://media.discordapp.net/attachments/717671005941661747/776181978004717618/textfx_4.png"/></a></center>
 <br><br>
+  <div align=center>
+    <a href="https://discord.gg/XqezQaK">
+    <img src="https://discordapp.com/api/guilds/733807204938940447/widget.png?style=shield" alt="shield.png">
+  </a>
+
+    
+
+  
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://top.gg/api/widget/status/679710920334639115.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=1A191A"/></a></center> 
 
@@ -47,3 +55,8 @@ use | Allows users to use some items to gain rewards that they are able to sell 
 vote | Allows users to vote for the bot.
 withdraw | Allows users to withdraw coins from there bank.
 work | Allows users to work for coins.
+
+
+
+
+  
