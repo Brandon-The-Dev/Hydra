@@ -38,7 +38,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription(`❌ You are betting more than you have`);
 
         let colorbad = new MessageEmbed()
-            .setColor("GREEN")
+            .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
             .setDescription(`
