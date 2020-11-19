@@ -122,8 +122,8 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: 'roulette', // Command Name
-    description: 'gamble your coins away or gain big..', // Description
-    usage: 't roulette', // Usage
+    description: 'gamble your coins away or gain big.', // Description
+    usage: 'h roulette', // Usage
     botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: ['roul' , 'roulet'], // Aliases 
