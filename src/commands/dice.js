@@ -3,16 +3,39 @@ module.exports.run = async (bot, message, args) => {
     const botRoll = Math.floor(Math.random() * 7)+1;
     const userChoice = Math.floor(Math.random() * 7)+1;
     const userData = await bot.fetchUser(message.author.id);
-    if (userData.passive == true) return message.channel.send(`You're in passive mode, turn it off to gamble`);
+  
+    let passivewarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
+  
+    if (userData.passive == true) return message.channel.send(passivewarn);
+  
     let betAmount = args[0];
     const result = userChoice-botRoll;
-    if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(`So how much coins are you gambling again?`);
-    if (betAmount < 50) return message.channel.send(`Sorry bud, you can only gamble \`50+\` coins`)
+  
+    let coinswarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ Enter the amount you want to gamble. `);
+
+    if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(coinswarn);
+
+    let coinmin = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ The minimum you can gamble is \`200\` coins.`);
+
+    if (betAmount < 200) return message.channel.send(coinmin);
+
     if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
     else betAmount=parseInt(args[0]);
-    if (betAmount > userData.coinsInWallet) {
-        return message.channel.send("You don't have that much coins lol");
-    }
+  
+    let moneywarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ You dont have that many coins.`);
+
+           if (betAmount > userData.coinsInWallet) {
+           return message.channel.send(moneywarn);
+           }
+  
     if (botRoll < userChoice) {
         const wonCoins = (betAmount + (betAmount * 0.55));
         userData.coinsInWallet += parseInt(wonCoins);
