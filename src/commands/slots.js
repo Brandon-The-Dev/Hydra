@@ -7,21 +7,31 @@ module.exports.run = async (bot, message, args) => {
         const userData = await bot.fetchUser(message.author.id);
   
     let passivewarn = new MessageEmbed()
-    .setColor("GREEN")
+    .setColor("RED")
     .setDescription(`❌ You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
   
         if (userData.passive == true) return message.channel.send(passivewarn);
            let betAmount = args[0];
-           if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max');
-  
+
+    let coinswarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ Enter the amount you want to gamble. `);
+
+           if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(coinswarn);
+
     let coinmin = new MessageEmbed()
-    .setColor("GREEN")
+    .setColor("RED")
     .setDescription(`❌ The minimum you can gamble is \`50\` coins.`);
-  
-           if (betAmount < 50) return message.channel.send(coinmin)
+
+           if (betAmount < 50) return message.channel.send(coinmin);
            if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
+
+    let moneywarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ You dont have that many coins.`);
+
            if (betAmount > userData.coinsInWallet) {
-           return message.channel.send("You don't have that many coins.");
+           return message.channel.send(moneywarn);
            }
   
     let user = message.author;
@@ -31,16 +41,12 @@ module.exports.run = async (bot, message, args) => {
   //let coinsInWallet = await bot.fetchUser(message.author.id);
   
 
-    let moneymore = new MessageEmbed()
-    .setColor("GREEN")
-    .setDescription(`❌ You dont have that many coins.`);
-
     let moneyhelp = new MessageEmbed()
-    .setColor("GREEN")
+    .setColor("RED")
     .setDescription(`❌ Specify an amount you want to gamble.`); 
 
 
-    if (betAmount > coinsInWallet) return message.channel.send(moneymore);
+    if (betAmount > coinsInWallet) return message.channel.send(moneywarn);
 
     let number = []
     for (let i = 0; i < 3; i++) { number[i] = Math.floor(Math.random() * slotItems.length); }
@@ -121,8 +127,8 @@ module.exports.run = async (bot, message, args) => {
 
 module.exports.config = {
     name: 'slots', // Command Name
-    description: 'gamble your coins away or gain big..', // Description
-    usage: 't slots', // Usage
+    description: 'gamble your coins away or gain big.', // Description
+    usage: 'h slots', // Usage
     botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: ['slot'], // Aliases 
