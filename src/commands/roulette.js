@@ -1,15 +1,16 @@
 const { MessageEmbed } = require("discord.js");
 module.exports.run = async (bot, message, args) => {
-        const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
-        const userData = await bot.fetchUser(message.author.id);
-        if (userData.passive == true) return message.channel.send(`You're in passive mode, turn it off to gamble`);
-           let betAmount = args[1];
-           if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max');
-           if (betAmount < 50) return message.channel.send(`Sorry bud, you can only gamble \`50+\` coins`)
-           if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
-           if (betAmount > userData.coinsInWallet) {
-           return message.channel.send("You don't have that many coins.");
-           }
+
+      const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
+
+      const userData = await bot.fetchUser(message.author.id);
+
+      let passivewarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
+  
+        if (userData.passive == true) return message.channel.send(passivewarn);
+  
              
         let user = message.author;
 
@@ -20,6 +21,47 @@ module.exports.run = async (bot, message, args) => {
         }
 
         let colour = args[0];
+  
+  let colorbad = new MessageEmbed()
+            .setColor("RED")
+            .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
+            .setFooter("https://top.gg/bot/679710920334639115/vote")
+            .setDescription(`
+❌ **Invalid colour please chose from below**
+🔴Red | Multiplier: x1.5
+\`h roulette red (amount)\`
+⚫Black | Multiplier: x2
+\`h roulette black (amount)\`
+🟡 Yellow | Multiplier: x2.5
+\`h roulette yellow (amount)\`
+🟢Green | Multiplier: x5
+\`h roulette green (amount)\`
+                            `);
+
+        if (!colour) return message.channel.send(colorbad);
+        colour = colour.toLowerCase()
+  
+        let betAmount = args[1];
+  
+      let coinswarn = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ Enter the amount you want to gamble. `);
+  
+    if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(coinswarn);
+  
+    let coinmin = new MessageEmbed()
+    .setColor("RED")
+    .setDescription(`❌ The minimum you can gamble is \`200\` coins.`);
+
+           if (betAmount < 200) return message.channel.send(coinmin);
+    if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
+    else betAmount=parseInt(args[1]);
+  
+           if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
+           if (betAmount > userData.coinsInWallet) {
+           return message.channel.send("You don't have that many coins.");
+           }
+  
         //let betAmount = args[1];
         let coinsInWallet = await bot.fetchUser(message.author.id);
 
@@ -37,25 +79,7 @@ module.exports.run = async (bot, message, args) => {
             .setFooter("https://top.gg/bot/679710920334639115/vote")
             .setDescription(`❌ You are betting more than you have`);
 
-        let colorbad = new MessageEmbed()
-            .setColor("RED")
-            .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
-            .setFooter("https://top.gg/bot/679710920334639115/vote")
-            .setDescription(`
-❌ **Invalid colour please chose from below**
-
-🔴Red | Multiplier: x1.5
-\`h roulette red (amount)\`
-⚫Black | Multiplier: x2
-\`h roulette black (amount)\`
-🟡 Yellow | Multiplier: x2.5
-\`h roulette yellow (amount)\`
-🟢Green | Multiplier: x5
-\`h roulette green (amount)\`
-                            `);
-
-        if (!colour) return message.channel.send(colorbad);
-        colour = colour.toLowerCase()
+        
         if (!betAmount) return message.channel.send(moneyhelp);
         if (betAmount > coinsInWallet) return message.channel.send(moneymore);
 
@@ -72,7 +96,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor("GREEN")
                 .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
                 .setFooter("https://top.gg/bot/679710920334639115/vote")
-                .setDescription(`🟢 **You won ${betAmount} coins**\n\nMultiplier: x5`);
+                .setDescription(`🟢 **You won ${betAmount.toLocaleString()} coins**\n\nMultiplier: x5`);
             message.channel.send(moneyEmbed1)
           
         } else if (isOdd(random) && colour == 1) { 
@@ -82,7 +106,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor("GREEN")
                 .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
                 .setFooter("https://top.gg/bot/679710920334639115/vote")
-                .setDescription(`🔴 **You won ${betAmount} coins**\n\nMultiplier: x1.5`);
+                .setDescription(`🔴 **You won ${betAmount.toLocaleString()} coins**\n\nMultiplier: x1.5`);
             message.channel.send(moneyEmbed2)
           
           } else if (isOdd(random) && colour == 3) { 
@@ -92,7 +116,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor("GREEN")
                 .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
                 .setFooter("https://top.gg/bot/679710920334639115/vote")
-                .setDescription(`🟡 **You won ${betAmount} coins**\n\nMultiplier: x2.5`);
+                .setDescription(`🟡 **You won ${betAmount.toLocaleString()} coins**\n\nMultiplier: x2.5`);
             message.channel.send(moneyEmbed4)
             
         } else if (!isOdd(random) && colour == 0) { 
@@ -102,7 +126,7 @@ module.exports.run = async (bot, message, args) => {
                 .setColor("GREEN")
                 .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
                 .setFooter("https://top.gg/bot/679710920334639115/vote")
-                .setDescription(`⚫ **You won ${betAmount} coins**\n\nMultiplier: x2`);
+                .setDescription(`⚫ **You won ${betAmount.toLocaleString()} coins**\n\nMultiplier: x2`);
             message.channel.send(moneyEmbed3)
           
         } else { 
@@ -110,10 +134,10 @@ module.exports.run = async (bot, message, args) => {
         userData.coinsInWallet -= parseInt(betAmount);
         await userData.save();
             let moneyEmbed4 = new MessageEmbed()
-                .setColor("GREEN")
+                .setColor("RED")
                 .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
                 .setFooter("https://top.gg/bot/679710920334639115/vote")
-                .setDescription(`❌ **You lost ${betAmount} coins** \n\nGoodluck next time`);
+                .setDescription(`❌ **You lost ${betAmount.toLocaleString()} coins** \n\nGoodluck next time`);
             message.channel.send(moneyEmbed4)
         }
 
