@@ -60,7 +60,7 @@ module.exports.run = async (bot, message, args) => {
     }
     if (win) {
         let slotsEmbed1 = new MessageEmbed()
-            .setDescription(`**Slots V2**\n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nYou won ${betAmount} coins`)
+            .setDescription(`**Slots V2**\n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nYou won ${betAmount.toLocaleString()} coins`)
             .setColor("GREEN")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
@@ -72,7 +72,7 @@ module.exports.run = async (bot, message, args) => {
         await userData.save();
         let slotsEmbed = new MessageEmbed()
             .setDescription(`**Slots V2**\n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nYou lost ${betAmount} coins`)
-            .setColor("GREEN")
+            .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
         message.channel.send(slotsEmbed)
