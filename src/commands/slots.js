@@ -62,7 +62,7 @@ module.exports.run = async (bot, message, args) => {
     }
     if (win) {
         let slotsEmbed1 = new MessageEmbed()
-            .setDescription(`**Slots V2**\n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nYou won ${betAmount.toLocaleString()} coins`)
+            .setDescription(`Slots V2 | Player **${member.user.username}** \n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nWinnings: **${betAmount.toLocaleString()}** coins`)
             .setColor("GREEN")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
@@ -73,13 +73,24 @@ module.exports.run = async (bot, message, args) => {
         userData.coinsInWallet -= parseInt(betAmount);
         await userData.save();
         let slotsEmbed = new MessageEmbed()
-            .setDescription(`**Slots V2**\n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nYou lost ${lostCoins.toLocaleString()} coins`)
+            .setDescription(`Slots V2 | Player **${member.user.username}** \n\n${slotItems[number[0]]} | ${slotItems[number[1]]} | ${slotItems[number[2]]}\n\nLost: **${lostCoins.toLocaleString()}** coins`)
             .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
         message.channel.send(slotsEmbed)
     }
 
+}
+
+module.exports.config = {
+    name: 'slots', // Command Name
+    description: 'gamble your coins away or gain big.', // Description
+    usage: 'h slots', // Usage
+    botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
+    userPerms: [], // User permissions needed to run command. Leave empty if nothing.
+    aliases: ['slot'], // Aliases 
+    bankSpace: 10, // Amount of bank space to give when command is used.
+    cooldown: 5 // Command Cooldown
 }
 
 module.exports.config = {
