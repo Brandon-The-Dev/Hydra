@@ -1,8 +1,8 @@
+const { MessageEmbed } = require("discord.js");
+const i = '<:info:688057843558908013>'
 module.exports.run = async (bot, message, args) => {
-    const another = Math.round(Math.random() * 15);
-    if (another === 4) {
-        return message.channel.send(`**Brandon-Dev**: you cant search me bruh`);
-    }
+  
+    const usertag = message.member;
     const random = Math.round(Math.random() * 400);
     const randomMessage = [
         `You searched in the Bin, You found ${random.toLocaleString()} coins.`,
@@ -14,8 +14,11 @@ module.exports.run = async (bot, message, args) => {
         `You searched your mothers draws, You found ${random.toLocaleString()} coins.`,
     ];
     const response = randomMessage[Math.floor((Math.random() * randomMessage.length))];
-    await message.reply(`${response}`)
-    .catch();
+    let searchembed = new MessageEmbed()
+    .setColor("BLUE")
+    .setDescription(`${i} **${usertag.user.username}** : ${response}`);
+
+    await message.channel.send(searchembed).catch();
     await bot.giveCoins(message.author.id, random);
 }
 
