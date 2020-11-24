@@ -1,4 +1,4 @@
-const i = '<:info:688057843558908013>'
+const i = '<:infomation:779736273639440394>'
 const x = '<:noov:695993429087354991> '
 const tick = '<:bigtick:779736050892931082>'
 const { MessageEmbed } = require('discord.js');  
