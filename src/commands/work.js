@@ -1,6 +1,6 @@
 const ms = require("parse-ms");
 const { MessageEmbed } = require("discord.js")
-const i = '<:info:688057843558908013>'
+const i = '<:infomation:779736273639440394>'
 const x = '<:noov:695993429087354991> '
 const tick = '<:bigtick:779736050892931082>'
 
@@ -15,8 +15,8 @@ module.exports.run = async (bot, message, args) => {
         let time = ms(timeout - (Date.now() - author));
     
         let timeEmbed = new MessageEmbed()
-        .setColor("GREEN")
-        .setDescription(`${tick} **${user.user.username}** : You have already worked recently\n\nTry again in ${time.minutes}m ${time.seconds}s `);
+        .setColor("BLUE")
+        .setDescription(`${i} **${user.user.username}** : You have already worked recently\n\nTry again in ${time.minutes}m ${time.seconds}s `);
         message.channel.send(timeEmbed)
       } else {
         let replies = ['Programmer','Builder','Waiter','Busboy','Chief','Mechanic']
@@ -24,8 +24,8 @@ module.exports.run = async (bot, message, args) => {
         let result = Math.floor((Math.random() * replies.length));
         let amount = Math.floor(Math.random() * 300) + 1;
         let embed1 = new MessageEmbed()
-        .setColor("BLUE")
-        .setDescription(`${i} You worked as a ${replies[result]} and earned ${amount} coins`);
+        .setColor("GREEN")
+        .setDescription(`${tick} You worked as a ${replies[result]} and earned ${amount} coins`);
         message.channel.send(embed1)
         
         bot.giveCoins(message.author.id, amount)
