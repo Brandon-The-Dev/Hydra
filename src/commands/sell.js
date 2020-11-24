@@ -1,9 +1,19 @@
+const i = '<:info:688057843558908013>'
+const x = '<:noov:695993429087354991> '
+const tick = '<:bigtick:779736050892931082>'
 const itemss = require('../utils/items');
 const { MessageEmbed } = require('discord.js');
 module.exports.run = async (bot, message, args) => {
+    const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
     let user = await bot.fetchUser(message.author.id);
     if (!args.join(' ')) {
-        return message.channel.send("you can't sell nothing lmao");
+      
+              let sell1embed = new MessageEmbed()
+              .setColor("RED")
+              .setDescription(`${x} **${member.user.username}** : You forgot to type the items \`id\`.`);
+              return message.channel.send(sell1embed);
+        //////return message.channel.send("you can't sell nothing lmao");
+      
     }
     if (!args[1]) args[1] = '';
     const item = itemss.find(x => x.name.toLowerCase() === args.join(' ').toString().toLowerCase() || x.name.toLowerCase() === args[0].toString().toLowerCase() || x.name.toLowerCase() === `${args[0].toString().toLowerCase()} ${args[1].toString().toLowerCase()}`);
@@ -11,13 +21,21 @@ module.exports.run = async (bot, message, args) => {
     if (!sellAmount) sellAmount = 1;
     else sellAmount = sellAmount[0]
     if (!item) {
-        return message.channel.send("can't sell this item");
+              let sell2embed = new MessageEmbed()
+              .setColor("RED")
+              .setDescription(`${x} **${member.user.username}** : You can't sell this item.`);
+              return message.channel.send(sell2embed);
+        //////return message.channel.send("can't sell this item");
     }
     let founditem = user.items.find(x => x.name.toLowerCase() === item.name.toLowerCase());
     let array = [];
     array = user.items.filter(x => x.name !== item.name);
     if (!founditem) {
-        return message.channel.send("you don't have this item");
+              let sell3embed = new MessageEmbed()
+              .setColor("RED")
+              .setDescription(`${x} **${member.user.username}** : You dont have this item.`);
+              return message.channel.send(sell3embed);
+        //////return message.channel.send("you don't have this item");
     }
     if (args[1] == 'all' || args[2] == 'all') {
         sellAmount = Math.floor(founditem.amount * item.sellAmount);
@@ -25,12 +43,17 @@ module.exports.run = async (bot, message, args) => {
         user.coinsInWallet += (sellAmount);
         user.save();
         const embed = new MessageEmbed()
-            .setAuthor('Sold')
-            .setDescription(`You sold ${parseInt(sellAmount/item.sellAmount).toLocaleString()} **${item.name}** for \`${(sellAmount).toLocaleString()}\` coins`)
-            .setColor('RANDOM');
+            .setDescription(`${tick} **${member.user.username}** : You sold ${parseInt(sellAmount/item.sellAmount).toLocaleString()} **${item.name}** for \`${(sellAmount).toLocaleString()}\` coins.`)
+            .setColor('GREEN');
         return message.channel.send(embed);
     }
-    if (founditem.amount < parseInt(sellAmount)) return message.channel.send(`You only have ${founditem.amount} of this item`);
+    if (founditem.amount < parseInt(sellAmount)) {
+              let sell4embed = new MessageEmbed()
+              .setColor("RED")
+              .setDescription(`${x} **${member.user.username}** : You only have x **${founditem.amount}** of this item`);
+              return message.channel.send(sell4embed);
+     /////////return message.channel.send(`You only have ${founditem.amount} of this item`);
+    }
     if (founditem.amount === 1) {
         user.items = array;
         await user.save();
@@ -52,9 +75,8 @@ module.exports.run = async (bot, message, args) => {
     user.coinsInWallet += (item.sellAmount * parseInt(sellAmount));
     await user.save();
     const embed = new MessageEmbed()
-        .setAuthor('Sold')
-        .setDescription(`You sold ${parseInt(sellAmount).toLocaleString()} **${item.name}** for \`${parseInt(item.sellAmount * sellAmount).toLocaleString()}\` coins`)
-        .setColor('RANDOM');
+        .setDescription(`${tick} **${member.user.username}** : You sold **${item.name}** x **${parseInt(sellAmount).toLocaleString()}** for \`${parseInt(item.sellAmount * sellAmount).toLocaleString()}\` coins`)
+        .setColor('GREEN');
     message.channel.send(embed);
 }
 
@@ -65,6 +87,6 @@ module.exports.config = {
     botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: [], // Aliases 
-    bankSpace: 0, // Amount of bank space to give when command is used.
+    bankSpace: 3, // Amount of bank space to give when command is used.
     cooldown: 5 // Command Cooldown
 }
