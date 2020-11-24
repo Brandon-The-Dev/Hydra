@@ -1,4 +1,5 @@
 const { MessageEmbed } = require("discord.js");
+const x = '<:noov:695993429087354991>'
 module.exports.run = async (bot, message, args) => {
     const botRoll = Math.floor(Math.random() * 13)+1;
     const userChoice = Math.floor(Math.random() * 13)+1;
@@ -8,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
 
     let passivewarn = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
+    .setDescription(`${x} **${member.user.username}** : You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
   
         if (userData.passive == true) return message.channel.send(passivewarn);
   
@@ -18,13 +19,13 @@ module.exports.run = async (bot, message, args) => {
   
     let coinswarn = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ Enter the amount you want to gamble. `);
+    .setDescription(`${x} **${member.user.username}** : Enter the amount you want to gamble. `);
 
     if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(coinswarn);
   
     let coinmin = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ The minimum you can gamble is \`200\` coins.`);
+    .setDescription(`${x} **${member.user.username}** : The minimum you can gamble is \`200\` coins.`);
 
            if (betAmount < 200) return message.channel.send(coinmin);
     if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
@@ -32,14 +33,14 @@ module.exports.run = async (bot, message, args) => {
   
     let moneywarn = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ You dont have that many coins.`);
+    .setDescription(`${x} **${member.user.username}** : You dont have that many coins.`);
 
            if (betAmount > userData.coinsInWallet) {
            return message.channel.send(moneywarn);
            }
   
     if (botRoll < userChoice) {
-        const wonCoins = (betAmount + (betAmount * 0.25));
+        const wonCoins = parseInt(betAmount + (betAmount * 0.20));
         userData.coinsInWallet += parseInt(wonCoins);
         await userData.save();
         const wonEmbed = new MessageEmbed()
@@ -49,13 +50,14 @@ module.exports.run = async (bot, message, args) => {
         .setDescription(`Gamble V2 | Player **${member.user.username}** \n\nHydra+ rolled: \`${botRoll}\` \n${member.user.username} rolled: \`${userChoice}\`\n\nWin Rate: \`${Math.floor(userChoice-botRoll)*10}%\`\n\nWinnings: **${wonCoins.toLocaleString()}** coins`)
         message.channel.send(wonEmbed);
     } else if (botRoll == userChoice) {
-        userData.coinsInWallet -= betAmount/2
+      const tieCoins = parseInt(betAmount/2);
+        userData.coinsInWallet -= parseInt(tieCoins);
         await userData.save();
         const tieEmbed = new MessageEmbed()
         .setColor('YELLOW')
         .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
         .setFooter("https://top.gg/bot/679710920334639115/vote")
-        .setDescription(`Gamble V2 | Player **${member.user.username}** \n\nHydra+ rolled: \`${botRoll}\` \n${member.user.username} rolled: \`${userChoice}\`\n\n**${member.user.username}** & **Hydra+**: Tied\n\nLost: **${(betAmount/2).toLocaleString()}** coins`)
+        .setDescription(`Gamble V2 | Player **${member.user.username}** \n\nHydra+ rolled: \`${botRoll}\` \n${member.user.username} rolled: \`${userChoice}\`\n\n**${member.user.username}** & **Hydra+**:Tied\n\nLost: **${tieCoins.toLocaleString()}** coins`)
         message.channel.send(tieEmbed);
     } else if (botRoll > userChoice) {
         const lostCoins = (betAmount);
@@ -69,7 +71,6 @@ module.exports.run = async (bot, message, args) => {
         message.channel.send(lostEmbed);
     }
 }   
-/*
 module.exports.config = {
     name: 'gamble', // Command Name
     description: 'gamble your coins away or gain big.', // Description
@@ -79,82 +80,4 @@ module.exports.config = {
     aliases: [], // Aliases 
     bankSpace: 5, // Amount of bank space to give when command is used.
     cooldown: 1 // Command Cooldown
-}
-
-const { MessageEmbed } = require("discord.js");
-module.exports.run = async (bot, message, args) => {
-    const botRoll = Math.floor(Math.random() * 13)+1;
-    const userChoice = Math.floor(Math.random() * 13)+1;
-    const userData = await bot.fetchUser(message.author.id);
-  
-    let passivewarn = new MessageEmbed()
-    .setColor("RED")
-    .setDescription(`❌ You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
-  
-        if (userData.passive == true) return message.channel.send(passivewarn);
-  
-  
-    let betAmount = args[0];
-    const result = userChoice-botRoll;
-  
-    let coinswarn = new MessageEmbed()
-    .setColor("RED")
-    .setDescription(`❌ Enter the amount you want to gamble. `);
-
-    if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(coinswarn);
-  
-    let coinmin = new MessageEmbed()
-    .setColor("RED")
-    .setDescription(`❌ The minimum you can gamble is \`200\` coins.`);
-
-           if (betAmount < 200) return message.channel.send(coinmin);
-    if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
-    else betAmount=parseInt(args[0]);
-  
-    let moneywarn = new MessageEmbed()
-    .setColor("RED")
-    .setDescription(`❌ You dont have that many coins.`);
-
-           if (betAmount > userData.coinsInWallet) {
-           return message.channel.send(moneywarn);
-           }
-  
-    if (botRoll < userChoice) {
-        const wonCoins = (betAmount + (betAmount * 0.25));
-        userData.coinsInWallet += parseInt(wonCoins);
-        await userData.save();
-        const wonEmbed = new MessageEmbed()
-        .setColor('GREEN')
-        .setDescription(`Bot rolled: \`${botRoll}\`\nYou rolled: \`${userChoice}\`\nWin Rate: \`${Math.floor(userChoice-botRoll)*10}%\`\nYou won: \`${wonCoins.toLocaleString()}\` coins`)
-        .setTitle('You Won!')
-        message.channel.send(wonEmbed);
-    } else if (botRoll == userChoice) {
-        userData.coinsInWallet -= betAmount/2
-        await userData.save();
-        const tieEmbed = new MessageEmbed()
-        .setColor('YELLOW')
-        .setDescription(`Bot rolled: \`${botRoll}\`\nYou rolled: \`${userChoice}\`\nYou lost: \`${(betAmount/2).toLocaleString()}\``)
-        .setTitle('Its a tie!')
-        message.channel.send(tieEmbed);
-    } else if (botRoll > userChoice) {
-        const lostCoins = (betAmount);
-        userData.coinsInWallet -= parseInt(betAmount);
-        await userData.save();
-        const lostEmbed = new MessageEmbed()
-        .setColor('RED')
-        .setDescription(`Bot rolled: \`${botRoll}\`\nYou rolled: \`${userChoice}\`\nLost Rate: \`${Math.floor(botRoll-userChoice)*10}%\`\nYou lost: \`${lostCoins.toLocaleString()}\` coins`)
-        .setTitle('You lost!')
-        message.channel.send(lostEmbed);
-    }
-}   
-*/
-module.exports.config = {
-    name: 'gamble', // Command Name
-    description: 'gamble your coins away or gain big.', // Description
-    usage: 'h gamble <amount>', // Usage
-    botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
-    userPerms: [], // User permissions needed to run command. Leave empty if nothing.
-    aliases: [], // Aliases 
-    bankSpace: 5, // Amount of bank space to give when command is used.
-    cooldown: 5 // Command Cooldown
 }
