@@ -1,6 +1,14 @@
+const { MessageEmbed } = require("discord.js");
+const i = '<:info:688057843558908013>'
 module.exports.run = async (bot, message, args) => {
-message.channel.send(`Vote For Hydra+ Here : \n https://top.gg/bot/679710920334639115/vote`);
+    const usertag = message.member;
+    let begembed = new MessageEmbed()
+    .setColor("BLUE")
+    .setDescription(`${i} **${usertag.user.username}** : Vote For Hydra+ Here : \n https://top.gg/bot/679710920334639115/vote`)
+    message.channel.send(begembed).catch();
+  //message.channel.send(`Vote For Hydra+ Here : \n https://top.gg/bot/679710920334639115/vote`);
 }
+//   https://top.gg/api/widget/upvotes/679710920334639115.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581
 
 module.exports.config = {
     name: 'vote', // Command Name
@@ -12,5 +20,3 @@ module.exports.config = {
     bankSpace: 15, // Amount of bank space to give when command is used.
     cooldown: 10 // Command Cooldown
 }
-
-
