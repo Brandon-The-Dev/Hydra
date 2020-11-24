@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const i = '<:infomation:779736273639440394>'
-const x = '<:noov:695993429087354991> '
-const tick = '<:yees:695992617015574534>'
+const x = '<:bigx:779736072367505449>'
+const tick = '<:bigtick:779736050892931082>'
 module.exports.run = async (bot, message, args) => {
     let data = await bot.fetchUser(message.author.id);
   const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
