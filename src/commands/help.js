@@ -1,6 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const p = require('pretty-ms');
-    
+const i = '<:info:688057843558908013>'
+
 module.exports.run = async (bot, message, args) => {
 
  const command = bot.commands.get(args.slice(0).join(' ').toString().toLowerCase()) || bot.commands.get(bot.aliases.get(args.join(' ').toString().toLowerCase()));
@@ -14,17 +15,16 @@ module.exports.run = async (bot, message, args) => {
             .addField('Usage', `\`${command.config.usage}\``, true)
             .addField('Aliases', `${command.config.aliases.join(', ') ? command.config.aliases : "No Aliases"}`, true)
             .addField('Cooldown', `${p(command.config.cooldown * 1000)}`, true)
-            .setColor('RANDOM');
+            .setColor('BLUE');
         return message.channel.send(embed);
     }
     let list = bot.commands.filter(x => x.config.name !== 'help' && x.config.name !== 'test');
     list = list.map(x => `\`${x.config.name}\``);
     const embed = new MessageEmbed()
-        .setTitle('Commands')
-    .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
-        .setDescription(`${list.join(', ')}`)
+        .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
+        .setDescription(`${i} **${member.user.username}** : Commands\n\n${list.join(', ')}`)
         .setFooter("You can get more info about a command by saying h help <command>")
-        .setColor('RANDOM');
+        .setColor('BLUE');
     message.channel.send(embed);
 }
 Object.defineProperty(Array.prototype, 'flat', {
@@ -41,6 +41,6 @@ module.exports.config = {
     botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: [], // Aliases 
-    bankSpace: 0, // Amount of bank space to give when command is used.
+    bankSpace: 2, // Amount of bank space to give when command is used.
     cooldown: 5 // Command Cooldown
 }
