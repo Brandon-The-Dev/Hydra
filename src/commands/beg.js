@@ -1,21 +1,25 @@
+const { MessageEmbed } = require("discord.js");
+const i = '<:info:688057843558908013>'
+const x = '<:noov:695993429087354991> '
+const tick = '<:bigtick:779736050892931082>'
 module.exports.run = async (bot, message, args) => {
-    const another = Math.round(Math.random() * 15);
-    if (another === 4) {
-        return message.channel.send(`**Brnadon-Dev**: lol your POOR !`);
-    }
+    const usertag = message.member;
     const random = Math.round(Math.random() * 100);
     const randomMessage = [
-        `WOW **Elon Musk** gave you ${random.toLocaleString()} coins.`,
+        `**Elon Musk** gave you ${random.toLocaleString()} coins.`,
         `**Bill Gates** gave you ${random.toLocaleString()} coins.`,
-        `A **beggar** found ${random.toLocaleString()} coins for you.`,
-        `**ur mom** found ${random.toLocaleString()} coins while cleaning the house.`,
-        `You looked inside your **stepsister's** drawer and found ${random.toLocaleString()} coins.`,
-        `You asked your **dog** and he vomited ${random.toLocaleString()} coins.`,
-        `You subscribed to **Brandon-Dev** so he gave you ${random.toLocaleString()} coins.`,
+        `A **beggar** gave you ${random.toLocaleString()} coins.`,
+        `Barack Obama gave you ${random.toLocaleString()} coins.`,
     ];
+  
     const response = randomMessage[Math.floor((Math.random() * randomMessage.length))];
-    await message.reply(`${response}`)
-    .catch();
+  
+    let begembed = new MessageEmbed()
+    .setColor("GREEN")
+    .setDescription(`${tick} **${usertag.user.username}** : ${response}`);
+
+    await message.channel.send(begembed).catch();
+  
     await bot.giveCoins(message.author.id, random);
 }
 
@@ -27,6 +31,6 @@ module.exports.config = {
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: [], // Aliases 
     bankSpace: 15, // Amount of bank space to give when command is used.
-    cooldown: 10 // Command Cooldown
+    cooldown: 5 // Command Cooldown
 }
 
