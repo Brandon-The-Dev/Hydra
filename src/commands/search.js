@@ -1,5 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 const i = '<:info:688057843558908013>'
+const tick = '<:bigtick:779736050892931082>'
 module.exports.run = async (bot, message, args) => {
   
     const usertag = message.member;
@@ -15,8 +16,8 @@ module.exports.run = async (bot, message, args) => {
     ];
     const response = randomMessage[Math.floor((Math.random() * randomMessage.length))];
     let searchembed = new MessageEmbed()
-    .setColor("BLUE")
-    .setDescription(`${i} **${usertag.user.username}** : ${response}`);
+    .setColor("GREEN")
+    .setDescription(`${tick} **${usertag.user.username}** : ${response}`);
 
     await message.channel.send(searchembed).catch();
     await bot.giveCoins(message.author.id, random);
