@@ -1,5 +1,7 @@
 const { MessageEmbed } = require("discord.js");
-const x = '<:noov:695993429087354991>'
+const i = '<:infomation:779736273639440394>'
+const x = '<:bigx:779736072367505449>'
+const tick = '<:bigtick:779736050892931082>'
 module.exports.run = async (bot, message, args) => {
     const botRoll = Math.floor(Math.random() * 7)+1;
     const userChoice = Math.floor(Math.random() * 7)+1;
