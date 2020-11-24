@@ -50,13 +50,14 @@ module.exports.run = async (bot, message, args) => {
         .setDescription(`Dice V2 | Player **${member.user.username}** \n\nHydra+ rolled: \`${botRoll}\` \n${member.user.username} rolled: \`${userChoice}\`\n\nWinnings: **${wonCoins.toLocaleString()}** coins`)
         message.channel.send(wonEmbed);
     } else if (botRoll == userChoice) {
-        userData.coinsInWallet -= betAmount/2
+        const tieCoins = parseInt(betAmount/2);
+        userData.coinsInWallet -= parseInt(tieCoins);
         userData.save();
         const tieEmbed = new MessageEmbed()
         .setColor('YELLOW')
         .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
         .setFooter("https://top.gg/bot/679710920334639115/vote")
-        .setDescription(`Dice V2 | Player **${member.user.username}** \n\nHydra+ rolled: \`${botRoll}\` \n${member.user.username} rolled: \`${userChoice}\`\n\n**${member.user.username}** & **Hydra+**: Tied\n\nLost: **${(betAmount/2).toLocaleString()}** coins`)
+        .setDescription(`Dice V2 | Player **${member.user.username}** \n\nHydra+ rolled: \`${botRoll}\` \n${member.user.username} rolled: \`${userChoice}\`\n\n**${member.user.username}** & **Hydra+**: Tied\n\nLost: **${tieCoins.toLocaleString()}** coins`)
         message.channel.send(tieEmbed);
     } else if (botRoll > userChoice) {
         const lostCoins = (betAmount);
