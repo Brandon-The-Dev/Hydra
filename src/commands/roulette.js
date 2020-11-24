@@ -1,3 +1,6 @@
+const i = '<:infomation:779736273639440394>'
+const x = '<:noov:695993429087354991> '
+const tick = '<:bigtick:779736050892931082>'
 const { MessageEmbed } = require("discord.js");
 module.exports.run = async (bot, message, args) => {
 
@@ -7,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
 
       let passivewarn = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
+    .setDescription(`${x} **${member.user.username}** : You have \`PASSIVE\` enabled, your reqired to disable it to use this command.`);
   
         if (userData.passive == true) return message.channel.send(passivewarn);
   
@@ -24,10 +27,22 @@ module.exports.run = async (bot, message, args) => {
   
   let colorbad = new MessageEmbed()
             .setColor("RED")
-            .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
+            .setDescription(`${x} **${member.user.username}** : Invalid colour please chose from below.`);
+    let colorbadinfo = new MessageEmbed()
+            .setColor("BLUE")
             .setFooter("https://top.gg/bot/679710920334639115/vote")
-            .setDescription(`
-❌ **Invalid colour please chose from below**
+            .setDescription(`${i} **${member.user.username}** : Command Infomation 
+
+  🔴Red | Multiplier: x1.5
+  \`h roulette red (amount)\`
+  ⚫Black | Multiplier: x2
+  \`h roulette black (amount)\`
+  🟡 Yellow | Multiplier: x2.5
+  \`h roulette yellow (amount)\`
+  🟢Green | Multiplier: x5
+  \`h roulette green (amount)\`
+`);
+/*
 🔴Red | Multiplier: x1.5
 \`h roulette red (amount)\`
 ⚫Black | Multiplier: x2
@@ -36,9 +51,9 @@ module.exports.run = async (bot, message, args) => {
 \`h roulette yellow (amount)\`
 🟢Green | Multiplier: x5
 \`h roulette green (amount)\`
-                            `);
-
-        if (!colour) return message.channel.send(colorbad);
+*/
+        if (!colour) return message.channel.send(colorbad).then(message.channel.send(colorbadinfo));
+        //////////////////////////////////////////////////////////////////////////////////if (!!colour) return message.channel.send(colorbadinfo);
         colour = colour.toLowerCase()
   
         if (colour == "b" || colour.includes("black")) colour = 0;
@@ -51,13 +66,13 @@ module.exports.run = async (bot, message, args) => {
   
       let coinswarn = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ Enter the amount you want to gamble. `);
+    .setDescription(`${x} **${member.user.username}** : Enter the amount you want to gamble. `);
   
     if (!betAmount || isNaN(betAmount) && betAmount !== 'all' && betAmount !== 'max') return message.channel.send(coinswarn);
   
     let coinmin = new MessageEmbed()
     .setColor("RED")
-    .setDescription(`❌ The minimum you can gamble is \`200\` coins.`);
+    .setDescription(`${x} **${member.user.username}** : The minimum you can gamble is \`200\` coins.`);
 
            if (betAmount < 200) return message.channel.send(coinmin);
     if (betAmount == 'all' || betAmount == 'max') betAmount=userData.coinsInWallet;
@@ -77,13 +92,13 @@ module.exports.run = async (bot, message, args) => {
             .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
-            .setDescription(`❌ Specify an amount to gamble \n\n h roulette <color> <amount>`);
+            .setDescription(`${x} **${member.user.username}** :  Specify an amount to gamble \n\n h roulette <color> <amount>`);
 
         let moneymore = new MessageEmbed()
             .setColor("RED")
             .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
             .setFooter("https://top.gg/bot/679710920334639115/vote")
-            .setDescription(`❌ You are betting more than you have`);
+            .setDescription(`${x} **${member.user.username}** :  You are betting more than you have`);
 
         
         if (!betAmount) return message.channel.send(moneyhelp);
