@@ -1,5 +1,5 @@
 const { MessageEmbed } = require("discord.js");
-const i = '<:info:688057843558908013>'
+const i = '<:infomation:779736273639440394>'
 module.exports.run = async (bot, message, args) => {
     const usertag = message.member;
     let begembed = new MessageEmbed()
