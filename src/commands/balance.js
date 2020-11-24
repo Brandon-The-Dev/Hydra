@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
         .setTitle(`${member.user.username}'s Balance`)
         .setThumbnail(member.user.displayAvatarURL({ format: 'png', size: 256, dynamic: true }))
         .setDescription(`💳**Wallet**: ${user.coinsInWallet.toLocaleString()}\n🏦**Bank**: ${user.coinsInBank.toLocaleString()}/${user.bankSpace.toLocaleString()}\n🌐**Total Net Worth**: ${(user.coinsInWallet + user.coinsInBank).toLocaleString()}`)
+        .setFooter("https://top.gg/bot/679710920334639115/vote")
         .setColor('RANDOM');
     message.channel.send(embed);
 }
