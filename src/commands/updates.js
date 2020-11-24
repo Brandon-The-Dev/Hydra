@@ -1,7 +1,6 @@
 const { Client, Message, MessageEmbed } = require("discord.js")
 const pm = require('pretty-ms');
-const i = '<:info:688057843558908013>'
-
+const i = '<:infomation:779736273639440394>'
 module.exports.run = async (bot, message, args) => {
     const Embed = new MessageEmbed()
     .setDescription(`
