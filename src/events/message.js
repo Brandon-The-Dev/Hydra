@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const prettyMilliseconds = require('pretty-ms');
-const prefix = 't'
+const prefix = 'h'
 const cd = '<:hazzered:779736248813879296>'
 module.exports = async (bot, message) => {
     const member = message.member;
