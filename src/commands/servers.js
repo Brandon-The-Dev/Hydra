@@ -1,13 +1,18 @@
+const { MessageEmbed } = require("discord.js")
+const i = '<:info:688057843558908013>'
 module.exports.run = async (bot, message, args) => {
-    message.channel.send(`Servers amount: **${bot.guilds.cache.size.toLocaleString()}**`);;
+    const Embed = new MessageEmbed()
+    .setDescription(`${i} Hydra+ is currently deployed in [ **${bot.guilds.cache.size.toLocaleString()}** ]  servers.`)
+    .setColor("BLUE")
+    message.channel.send(Embed);
 }
 module.exports.config = {
-    name: 'servers', // Command Name
-    description: 'see amount of bot\'s servers', // Description
-    usage: 'h servers', // Usage
-    botPerms: [], // Bot permissions needed to run command. Leave empty if nothing.
-    userPerms: [], // User permissions needed to run command. Leave empty if nothing.
-    aliases: [], // Aliases 
-    bankSpace: 5, // Amount of bank space to give when command is used.
-    cooldown: 5 // Command Cooldown .users.cache.size
+    name: 'servers',
+    description: 'See the bot\'s statisctics',
+    usage: 'h servers',
+    botPerms: [],
+    userPerms: [],
+    aliases: ['servers'],
+    bankSpace: 1,
+    cooldown: 5
 }
