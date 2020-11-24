@@ -15,13 +15,6 @@ module.exports.run = async (bot, message, args) => {
   
     if (user.passive == true) return message.channel.send(passivewarn);
   
-      let roleerrorembed = new MessageEmbed()
-    .setColor("RED")
-    .setDescription(`${x} **${usertag.user.username}** : You can't rob a bot.`);
-    let role = message.mentions.roles.first();
-    if(!role) return message.channel.send(roleerrorembed);
-  
-  
     if (!member) {
       
     let rob1embed = new MessageEmbed()
