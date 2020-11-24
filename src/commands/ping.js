@@ -1,6 +1,9 @@
+const i = '<:info:688057843558908013>'
+const x = '<:noov:695993429087354991> '
+const tick = '<:bigtick:779736050892931082>'
 module.exports.run = async (bot, message, args) => {
-    message.channel.send('Pinging...')
-    .then(m => m.edit(`:ping_pong: My ping is ${bot.ws.ping} ms`))
+    message.channel.send(`${i} Pinging...`)
+    .then(m => m.edit(`${tick} Ping : ${bot.ws.ping} ms`))
     .catch(err => console.log(err));
 }
 module.exports.config = {
@@ -11,5 +14,5 @@ module.exports.config = {
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: [], // Aliases 
     bankSpace: 0, // Amount of bank space to give when command is used.
-    cooldown: 0 // Command Cooldown
+    cooldown: 5 // Command Cooldown
 }
