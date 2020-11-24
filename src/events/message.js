@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const prettyMilliseconds = require('pretty-ms');
-const prefix = 'h'
+const prefix = 't'
+const cd = '<:hazzered:779736248813879296>'
 module.exports = async (bot, message) => {
+    const member = message.member;
     if (message.author.bot || message.channel.type === 'dm') return;
     if (message.content.toLowerCase().startsWith(prefix.toLowerCase())) {
         const messageArray = message.content.split(' ');
@@ -24,9 +26,8 @@ module.exports = async (bot, message) => {
                 if (now < expirationTime) {
                     const timeLeft = (expirationTime - now) / 1000;
                     const cooldownEmbed = new Discord.MessageEmbed()
-                        .setTitle('Cooldown')
-                        .setDescription(`This command is on a cooldown, try again in \`${prettyMilliseconds(timeLeft * 1000)}\`.\n\nThe default cooldown on this command is \`${prettyMilliseconds(command.config.cooldown * 1000)}\``)
-                        .setColor(0x3c54b4);
+                        .setDescription(`${cd} **${member.user.username}** : This command is on a cooldown.\n\nYou will be able to run the command again in : \`${prettyMilliseconds(timeLeft * 1000)}\`.\n\nThe default cooldown on this command is \`${prettyMilliseconds(command.config.cooldown * 1000)}\`.`)
+                        .setColor('#FFA500');
                     return message.channel.send(cooldownEmbed);
                 }
             }
