@@ -15,8 +15,8 @@ module.exports.run = async (bot, message, args) => {
         let time = ms(timeout - (Date.now() - author));
     
         let timeEmbed = new MessageEmbed()
-        .setColor("BLUE")
-        .setDescription(`${i} **${user.user.username}** : You have already worked recently\n\nTry again in ${time.minutes}m ${time.seconds}s `);
+        .setColor("GREEN")
+        .setDescription(`${tick} **${user.user.username}** : You have already worked recently\n\nTry again in ${time.minutes}m ${time.seconds}s `);
         message.channel.send(timeEmbed)
       } else {
         let replies = ['Programmer','Builder','Waiter','Busboy','Chief','Mechanic']
