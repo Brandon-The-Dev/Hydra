@@ -42,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
            }
   
     if (botRoll < userChoice) {
-        const wonCoins = parseInt(betAmount + (betAmount * 0.20));
+        const wonCoins = parseInt(betAmount + (betAmount * 0.40));
         userData.coinsInWallet += parseInt(wonCoins);
         await userData.save();
         const wonEmbed = new MessageEmbed()
