@@ -52,13 +52,10 @@ search | Allows users to search for free coins.
 sell | Allows users to sell items that they have recived or have bought from the shop.
 servers | Allows users to check how many servers the bot is on.
 shop | Displays all the items that are available to be bought.
+support | Displays the support server link.
 slots | Allows users to make a bet and try win more back.
+uptime | Displays the amount of time the bot has been online.
 use | Allows users to use some items to gain rewards that they are able to sell for coins.
 vote | Allows users to vote for the bot.
 withdraw | Allows users to withdraw coins from there bank.
 work | Allows users to work for coins.
-
-
-
-
-  
