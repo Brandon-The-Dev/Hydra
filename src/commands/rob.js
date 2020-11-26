@@ -87,7 +87,7 @@ module.exports.run = async (bot, message, args) => {
         }
         else {
             array.push({
-                name: 'Padlock',
+                name: 'padlock',
                 amount: padlock.amount - 1,
                 description: padlock.description
             });
