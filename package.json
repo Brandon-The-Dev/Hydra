@@ -1,6 +1,7 @@
 {
   "name": "Hydra",
   "version": "1.0.0",
+  "node": "12.20.0",
   "description": "Simple economy bot.",
   "main": "./src/index.js",
   "scripts": {
