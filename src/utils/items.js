@@ -8,6 +8,8 @@ const sc = '<a:HYDRA_SILVER_COIN_GIF:780447045126455326>' // :HYDRA_SILVER_COIN_
 const bc = '<a:HYDRA_BRONZE_COIN_GIF:780446979452698674>' // :HYDRA_BRONZE_COIN_GIF: 
 const ht = '<a:HYDRA_THROPHY:780446245612945409>' // :HYDRA_THROPHY:
 const hc = '<:HYDRA_CLOVER:780473481590210560>'
+const junkemoji = '<:HYDRA_JUNK:781846282473046016>'
+const legfish = '<:HYDRA_FISH_LEG:781936373325365268>'
 const array = [{
     name: 'cookie',
     description: '🍪 **Cookie**\na tasty snack.',
@@ -68,8 +70,73 @@ const array = [{
     }
 },
 {
-    name: 'fish',
-    description: '🐟 **Fish** \nsell fish to make money.',
+    name: 'common',
+    description: '🐟 **Common Fish** \nsell common to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 125,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'uncommon',
+    description: '🐠 **Uncommon Fish** \nsell uncommon to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 125,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'rare',
+    description: '🦑 **Rare Fish** \nsell rare to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 125,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'veryrare',
+    description: '🐡 **Very Rare Fish** \nsell veryrare to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 125,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'legendary',
+    description: `${legfish} **Legendary Fish** \nsell legendary to make money.`,
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 125,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'junk',
+    description: `${junkemoji} **Junk** \nsell junk to make money.`,
     canUse: false,
     canBuy: false,
     displayOnShop: false,
@@ -98,7 +165,7 @@ const array = [{
 {
     name: 'rifle',
     description: `${rifle} **Rifle**\nuse this to kills animals`,
-    canUse: true,
+    canUse: false,
     canBuy: true,
     displayOnShop: true,
     sellAmount: 3000,
@@ -106,20 +173,6 @@ const array = [{
     keep: true,
     run: async (bot, message, args) => {
 
-        const deerAmount = Math.round(Math.random() * 1) + 1;
-        const data = await bot.fetchUser(message.author.id);
-        message.channel.send(`You went hunting and came back with **${deerAmount}** x Deer 🦌`);
-        const findItem = data.items.find(i => i.name.toLowerCase() == 'deer');
-        let userInv = data.items.filter(i => i.name.toLowerCase() !== 'deer');
-        if (findItem) {
-            userInv.push({ name: 'deer', amount: (findItem.amount + deerAmount), description: '🦌 **Deer**\nsell deer to make money.' });
-            data.items = userInv;
-            await data.save();
-        } else {
-            userInv.push({ name: 'deer', amount: deerAmount, description: '🦌 **Deer**\nsell the fish to make money.' });
-            data.items = userInv;
-            await data.save();
-        }
     }
 },
 {
@@ -136,12 +189,103 @@ const array = [{
     }
 },
 {
-    name: 'bare',
-    description: '🐻 **Bare**\nsell deer to make money.',
+    name: 'bear',
+    description: '🐻 **Bear**\nsell bear to make money.',
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 250,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'duck',
+    description: '🦆 **Duck**\nsell duck to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'pig',
+    description: '🐷 **Pig**\nsell pig to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'cow',
+    description: '🐮 **Cow**\nsell cow to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'fox',
+    description: '🦊 **Fox**\nsell fox to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'rabbit',
+    description: '🐰 **Rabbit**\nsell rabbit to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'chicken',
+    description: '🐔 **Chicken**\nsell chicken to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'boar',
+    description: '🐗 **Boar**\nsell boar to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
