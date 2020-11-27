@@ -45,7 +45,7 @@ const array = [{
 {
     name: 'fishingrod',
     description: '🎣 **Fishing Rod** \nuse this to catchs fish',
-    canUse: true,
+    canUse: false,
     canBuy: true,
     displayOnShop: true,
     sellAmount: 3000,
@@ -53,20 +53,6 @@ const array = [{
     keep: true,
     run: async (bot, message, args) => {
       
-        const fishAmount = Math.round(Math.random() * 1) + 1;
-        const data = await bot.fetchUser(message.author.id);
-        message.channel.send(`You went fishing and came back with **${fishAmount}** x  Fish 🐟`);
-        const findItem = data.items.find(i => i.name.toLowerCase() == 'fish');
-        let userInv = data.items.filter(i => i.name.toLowerCase() !== 'fish');
-        if (findItem) {
-            userInv.push({ name: 'fish', amount: (findItem.amount + fishAmount), description: '🐟 **Fish** \nsell the fish to make money.' });
-            data.items = userInv;
-            await data.save();
-        } else {
-            userInv.push({ name: 'fish', amount: fishAmount, description: '🐟 **Fish** \nsell the fish to make money.' });
-            data.items = userInv;
-            await data.save();
-        }
     }
 },
 {
