@@ -60,7 +60,7 @@ module.exports.run = async (bot, message, args) => {
         else if (colour == "r" || colour.includes("red")) colour = 1;
         else if (colour == "g" || colour.includes("green")) colour = 2;
         else if (colour == "y" || colour.includes("yellow")) colour = 3;
-        else return message.channel.send(colorbad);
+        else return message.channel.send(colorbad).then(message.channel.send(colorbadinfo));
   
         let betAmount = args[1];
   
