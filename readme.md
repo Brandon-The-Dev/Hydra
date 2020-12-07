@@ -32,6 +32,7 @@ Commands | Infomation
 balance | Displays a users balance.
 beg | Allows users beg people for coins.
 buy | Allows users to buy items from the shop.
+credits | Displays all developers.
 crime | Allows users to comit a crime to try gain some coins.
 daily | Allows the users every 24 hours to claim a reward.
 deposit | Allows users to deposit some of there coins into there bank.
@@ -42,6 +43,8 @@ give | Allows users to send coins to other users.
 help | Displays all the commands that are available.
 inventory | Displays all the items that are in a users inventory
 invite | Sends the invite for the bot.
+meme | Posts a meme in that chat and you gain coins.
+mine | Allows users to mine for gems.
 passive | Allows a user to toggle into passive mode to prevent them from been robbed.
 ping | Allows users to check the ping of the bot.
 profile | Allows users to view there profile on the bot.
