@@ -66,7 +66,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 125,
+    sellAmount: 25,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -79,7 +79,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 125,
+    sellAmount: 50,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -105,7 +105,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 125,
+    sellAmount: 75,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -118,7 +118,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 125,
+    sellAmount: 200,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -131,7 +131,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 125,
+    sellAmount: 10,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -172,7 +172,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 250,
+    sellAmount: 50,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -185,7 +185,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 60,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -198,7 +198,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 25,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -211,7 +211,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 80,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -224,7 +224,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 120,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -237,7 +237,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 100,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -250,7 +250,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 30,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -263,7 +263,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 50,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
@@ -276,7 +276,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 300,
+    sellAmount: 10,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
