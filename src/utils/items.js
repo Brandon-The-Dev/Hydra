@@ -297,6 +297,19 @@ const array = [{
     }
 },
 {
+    name: 'gem',
+    description: '💎 **Gem**\nsell gems to make money.',
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 500,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
     name: 'diamond',
     description: `${hd} **Diamond Gem** \nsell the diamond to make money.`,
     canUse: false,
