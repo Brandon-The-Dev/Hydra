@@ -124,7 +124,7 @@ module.exports.run = async (bot, message, args) => {
                 .setDescription(`Roulette V2 | Player : **${member.user.username}** \n\n Colour : 🔴 \n\n Multiplier : **x1.5**  \n\n Winnings : **${betAmount.toLocaleString()}** coins`);
             message.channel.send(moneyEmbed2)
           
-          } else if (isOdd(random) && colour == 3) { 
+          } else if (random == 1 && colour == 3) { 
             betAmount = parseInt(betAmount * 2.5)
             bot.giveCoins(message.author.id, betAmount)
             let moneyEmbed4 = new MessageEmbed()
