@@ -10,6 +10,11 @@ const ht = '<a:HYDRA_THROPHY:780446245612945409>' // :HYDRA_THROPHY:
 const hc = '<:HYDRA_CLOVER:780473481590210560>'
 const junkemoji = '<:HYDRA_JUNK:781846282473046016>'
 const legfish = '<:HYDRA_FISH_LEG:781936373325365268>'
+const hd = '<:HYDRA_D:782294387676938280>'
+const hr = '<:HYDRA_RUBY:782295231734743070>'
+const hg = '<:HYDRA_GADE:782295694806745139>'
+const ha = '<:HYDRA_AMETHYST:782298032624107550>'
+const hp = '<:HYDRA_PRECIOUS:782300656362979379>'
 const array = [{
     name: 'cookie',
     description: '🍪 **Cookie**\na tasty snack.',
@@ -281,32 +286,71 @@ const array = [{
 {
     name: 'pickaxe',
     description: `${pick} **Pickaxe**\nuse this to mine gems`,
-    canUse: true,
+    canUse: false,
     canBuy: true,
     displayOnShop: true,
     sellAmount: 3000,
     price: 30000,
     keep: true,
     run: async (bot, message, args) => {
-        const gemAmount = Math.round(Math.random() * 1) + 1;
-        const data = await bot.fetchUser(message.author.id);
-        message.channel.send(`You went mining and came back with **${gemAmount}** x Gem 💎`);
-        const findItem = data.items.find(i => i.name.toLowerCase() == 'gem');
-        let userInv = data.items.filter(i => i.name.toLowerCase() !== 'gem');
-        if (findItem) {
-            userInv.push({ name: 'gem', amount: (findItem.amount + gemAmount), description: '💎 **Gem**\nsell gems to make money.' });
-            data.items = userInv;
-            await data.save();
-        } else {
-            userInv.push({ name: 'gem', amount: gemAmount, description: '💎 **Gem**\nsell gems to make money.' });
-            data.items = userInv;
-            await data.save();
-        }
+
     }
 },
 {
-    name: 'gem',
-    description: '💎 **Gem**\nsell gems to make money.',
+    name: 'diamond',
+    description: `${hd} **Diamond Gem** \nsell the diamond to make money.`,
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 200,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'ruby',
+    description: `${hr} **Ruby Gem** \nsell the ruby to make money.`,
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 225,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'gade',
+    description: `${hg} **Gade Gem** \nsell the gade to make money.`,
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 300,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'amethyst',
+    description: `${ha} **Amethyst Gem** \nsell the amethyst to make money.`,
+    canUse: false,
+    canBuy: false,
+    displayOnShop: false,
+    sellAmount: 350,
+    price: 0,
+    keep: true,
+    run: async (bot, message, args) => {
+
+    }
+},
+{
+    name: 'precious',
+    description: `${hp} **Precious Gem** \nsell the precious to make money.`,
     canUse: false,
     canBuy: false,
     displayOnShop: false,
@@ -317,7 +361,7 @@ const array = [{
 
     }
 },
-               {
+{
     name: 'axe',
     description: `${axe} **Axe**\nuse this to chops trees down`,
     canUse: true,
