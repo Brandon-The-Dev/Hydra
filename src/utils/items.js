@@ -302,7 +302,7 @@ const array = [{
     canUse: false,
     canBuy: false,
     displayOnShop: false,
-    sellAmount: 500,
+    sellAmount: 10,
     price: 0,
     keep: true,
     run: async (bot, message, args) => {
