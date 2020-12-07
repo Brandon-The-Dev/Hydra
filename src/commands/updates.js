@@ -19,6 +19,10 @@ Date : \`24/11/2020\`
 5. 4. Fixed issue with \`Gamble\`, \`Dice\`, \`Roulette\`, \`Slots\` that after winning 0.5 coins it would brake the balance system.
 
 6. Unfortunately there was a issue with the items in users profiles, as we changed the way the \`Inventory\` command is displayed. Also the users balance's have also been reset.
+
+Date : \`7/12/2020\`
+
+1. Added the command \`h mine\`.
 `)
     .setColor("BLUE")
     message.channel.send(Embed);
@@ -29,7 +33,7 @@ module.exports.config = {
     usage: 'h updates',
     botPerms: [],
     userPerms: [],
-    aliases: ['servers'],
+    aliases: ['log'],
     bankSpace: 1,
     cooldown: 5
 }
