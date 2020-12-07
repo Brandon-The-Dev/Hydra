@@ -32,11 +32,13 @@ Commands | Infomation
 balance | Displays a users balance.
 beg | Allows users beg people for coins.
 buy | Allows users to buy items from the shop.
+cat | Posts a photo of a cat in that chat and you gain coins.
 credits | Displays all developers.
 crime | Allows users to comit a crime to try gain some coins.
 daily | Allows the users every 24 hours to claim a reward.
 deposit | Allows users to deposit some of there coins into there bank.
 dice | Allows users to make a bet and try win more back.
+dog | Posts a photo of a dog in that chat and you gain coins.
 gamble | Allows users to make a bet and try win more back.
 gift | Allows users to send items to other users.
 give | Allows users to send coins to other users.
