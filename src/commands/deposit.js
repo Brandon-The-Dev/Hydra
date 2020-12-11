@@ -1,7 +1,8 @@
 const { MessageEmbed } = require('discord.js');
-const i = '<:infomation:779736273639440394>'
-const x = '<:bigx:779736072367505449>'
-const tick = '<:bigtick:779736050892931082>'
+const i = '<:info:688057843558908013>'
+const x = '<:noov:695993429087354991> '
+const tick = '<:yees:695992617015574534>'
+
 module.exports.run = async (bot, message, args) => {
     let data = await bot.fetchUser(message.author.id);
   const member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
@@ -19,12 +20,6 @@ module.exports.run = async (bot, message, args) => {
             //return message.channel.send("You don't have that much space in your bank. ");
         }
           
-         /* let test21 = new MessageEmbed()
-            .setColor("BLUE")
-            .setDescription(`${i} bank full`);
-          if (data.coinsInBank === data.bankSpace) return message.channel.send(test21);
-            //return message.channel.send('Your bank is not big enough.');
-          */
           
           
             data.coinsInWallet = max_deposit;
@@ -69,8 +64,7 @@ module.exports.run = async (bot, message, args) => {
             }
         }
     } else {
-        let depAmount = parseInt(args[0]);
-        if (isNaN(depAmount)) {
+        if (isNaN(args[0])) {
           let numbererrorembed = new MessageEmbed()
             .setColor("RED")
             .setDescription(`${x} **${member.user.username}** : That's not a number.`);
@@ -79,7 +73,7 @@ module.exports.run = async (bot, message, args) => {
             //return message.channel.send('That\'s not a number.');
         }
 
-        if (parseInt(depAmount) > data.bankSpace) {
+        if (parseInt(args[0]) > data.bankSpace) {
             let bankfullerrorembed = new MessageEmbed()
             .setColor("RED")
             .setDescription(`${x} **${member.user.username}** : Your bank is not big enough.`);
@@ -87,33 +81,22 @@ module.exports.run = async (bot, message, args) => {
             return message.channel.send(bankfullerrorembed).catch();
             //return message.channel.send('Your bank is not big enough.');
         }
-        if (parseInt(depAmount) > data.coinsInWallet) {
+        if (parseInt(args[0]) > data.coinsInWallet) {
           let moneyerrorembed = new MessageEmbed()
             .setColor("RED")
             .setDescription(`${x} **${member.user.username}** : You don't have that much money.`);
-
-            return message.channel.send(moneyerrorembed).catch();
             //return message.channel.send("You don't have that much money.");
         }
-        if (parseInt(depAmount) + data.coinsInBank > data.bankSpace) {
-            let bankerrorembed = new MessageEmbed()
-            .setColor("RED")
-            .setDescription(`${x} **${member.user.username}** : You don't have that much space in your bank.`);
 
-            return message.channel.send(bankerrorembed).catch();
-            //return message.channel.send("You don't have that much space in your bank. ");
-        }
-
-        data.coinsInBank += parseInt(depAmount);
-
+        data.coinsInBank += parseInt(args[0]);
             let depamountembed = new MessageEmbed()
             .setColor("BLUE")
-            .setDescription(`${i} **${member.user.username}** : Deposited **${(depAmount).toLocaleString()}** coins.`);
+            .setDescription(`${i} **${member.user.username}** : Deposited **${(args[0]).toLocaleString()}** coins.`);
 
-            return message.channel.send(depamountembed).catch();
-      //  await message.channel.send(`Deposited **${(depAmount).toLocaleString()}** coins.`);
+            await message.channel.send(depamountembed).catch();
+        //await message.channel.send(`Deposited **${args[0]}** coins.`);
 
-        data.coinsInWallet -= parseInt(depAmount);
+        data.coinsInWallet -= parseInt(args[0]);
 
         await data.save();
     }
@@ -127,5 +110,5 @@ module.exports.config = {
     userPerms: [], // User permissions needed to run command. Leave empty if nothing.
     aliases: ['dep'], // Aliases 
     bankSpace: 0, // Amount of bank space to give when command is used.
-    cooldown: 5 // Command Cooldown
+    cooldown: 10 // Command Cooldown
 }
