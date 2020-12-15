@@ -23,11 +23,11 @@
 
 <br><br>
 
-You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456) 
+# You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456) 
 <br><br>
-You Can Also Join Our Server Here: [Invite](https://invite.gg/HydraBot)
+# You Can Also Join Our Server Here: [Invite](https://invite.gg/HydraBot)
 <br><br>
-You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/679710920334639115/vote)
+# You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/679710920334639115/vote)
 
 Commands | Infomation
 -----|------------
@@ -52,7 +52,7 @@ mine | Allows users to mine for gems.
 passive | Allows a user to toggle into passive mode to prevent them from been robbed.
 ping | Allows users to check the ping of the bot.
 profile | Allows users to view there profile on the bot.
-rich | Displays whos has the most coins in a server.
+rich | Displays whos has the most coins in a server. 
 rob | Allows users to rob each other.
 roulette | Allows users to make a bet and try win more back.
 search | Allows users to search for free coins.
