@@ -28,6 +28,7 @@
 ### You Can Also Join Our Server Here: [Invite](https://invite.gg/HydraBot)
 <br><br>
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/679710920334639115/vote)
+<br><br>
 
 Commands | Infomation
 -----|------------
