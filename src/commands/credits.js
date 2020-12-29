@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 const i = '<:infomation:779736273639440394>'
 const x = '<:bigx:779736072367505449>'
 const tick = '<:bigtick:779736050892931082>'
-const dev = '<:discord_bot_dev:719535352829837322>'
+const dev = '<:discord_bot_dev:793577868373524530>'
 const dg = '<:dg:780426487580852224>'
 module.exports.run = async (bot, message, args) => {
       const member = message.member;
