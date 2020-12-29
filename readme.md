@@ -16,10 +16,7 @@
 
 <center><a href="https://top.gg/bot/679710920334639115/vote"><img src="https://top.gg/api/widget/upvotes/679710920334639115.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/></a></center>
 <br><br>
-<div align=center>
-<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/cfefbcfab29015900fa81220d49974cd.png"/></a></center>
 
-<center><a href="https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456"><img src="https://i.gyazo.com/c226b9cd0b0412756e7922235a8382e9.png"/></a></center>
 
 <br><br>
 
