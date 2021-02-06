@@ -72,8 +72,7 @@ module.exports.run = async (bot, message, args) => {
             return message.channel.send(numbererrorembed).catch();
             //return message.channel.send('That\'s not a number.');
         }
-
-        if (parseInt(args[0]) > data.bankSpace) {
+        if ( data.bankSpace - data.coinsInBank < parseInt(args[0])) {
             let bankfullerrorembed = new MessageEmbed()
             .setColor("RED")
             .setDescription(`${x} **${member.user.username}** : Your bank is not big enough.`);
