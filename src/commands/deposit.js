@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     if (args.join(' ') === 'all') {
         if (data.coinsInWallet > data.bankSpace) {
             const max_deposit = (data.coinsInWallet + data.coinsInBank - data.bankSpace);
-          
+         
           if (data.coinsInBank-data.bankSpace === 0) {
             let bankerrorembed = new MessageEmbed()
             .setColor("RED")
