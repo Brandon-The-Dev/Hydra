@@ -29,6 +29,7 @@ Commands | Infomation
 -----|------------
 balance | Displays a users balance.
 beg | Allows users beg people for coins.
+blackjack | Allows users to gamble there coins playing blackjack.
 buy | Allows users to buy items from the shop.
 cat | Posts a photo of a cat in that chat and you gain coins.
 credits | Displays all developers.
