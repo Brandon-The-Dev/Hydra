@@ -259,7 +259,7 @@ module.exports.run = async (bot, message, args, ) => {
         async function loop() {
             if (gameOver) return;
 
-            endMsg("Info", "Hit = [\`h\`](https://docs.brandondev.xyz/)  |  Stand = [\`s\`](https://docs.brandondev.xyz/)  | [\`cancel\`](https://docs.brandondev.xyz/) but you will lose your bet ? ", false)
+            endMsg("Info", "Hit = [\`h\`](https://docs.brandondev.xyz/)  |  Stand = [\`s\`](https://docs.brandondev.xyz/)  \nOr [\`cancel\`](https://docs.brandondev.xyz/) but you will lose your bet ? ", false)
 
             let filter = m => m.author.id === message.author.id;
             message.channel.awaitMessages(filter, {
