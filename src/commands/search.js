@@ -4,7 +4,7 @@ const tick = '<:bigtick:779736050892931082>'
 module.exports.run = async (bot, message, args) => {
   
     const usertag = message.member;
-    const random = Math.round(Math.random() * 400);
+    const random = Math.round(Math.random() * 100);
     const randomMessage = [
         `You searched in the Bin, You found ${random.toLocaleString()} coins.`,
         `You searched in the Drain, You found ${random.toLocaleString()} coins.`,
