@@ -151,7 +151,7 @@ module.exports.run = async (bot, message, args, ) => {
                 if (card.suit == "clubs") cardsMsg += "♣"
                 cardsMsg += "`](https://docs.brandondev.xyz/) "
             });
-            cardsMsg += " --> " + player.score.toString()
+            cardsMsg += "\n**Total** : " + player.score.toString()
 
             let dealerMsg = "";
             if (!dealerC) {
@@ -171,7 +171,7 @@ module.exports.run = async (bot, message, args, ) => {
                     if (card.suit == "clubs") dealerMsg += "♣"
                     dealerMsg += "`](https://docs.brandondev.xyz/) "
                 });
-                dealerMsg += " --> " + dealer.score.toString()
+                dealerMsg += "\n**Total** : " + dealer.score.toString()
             }
 
             const gambleEmbed = new MessageEmbed()
