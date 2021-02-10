@@ -54,7 +54,7 @@ rob | Allows users to rob each other.
 roulette | Allows users to make a bet and try win more back.
 search | Allows users to search for free coins.
 sell | Allows users to sell items that they have recived or have bought from the shop.
-servers | Allows users to check how many servers the bot is on.
+stats | Allows users to check the bots stats.
 shop | Displays all the items that are available to be bought.
 support | Displays the support server link.
 slots | Allows users to make a bet and try win more back.
