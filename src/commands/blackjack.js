@@ -268,11 +268,11 @@ module.exports.run = async (bot, message, args, ) => {
                 errors: ['time']
             }).then(message => {
                 message = message.first()
-                if (message.content === "h" || message.content.includes("Hit") || message.content.includes("hit")) { // if (colour == "b" || colour.includes("black")) colour = 0;
+                if (message.content === "h" || message.content.includes("H") ||message.content.includes("Hit") || message.content.includes("hit")) { // if (colour == "b" || colour.includes("black")) colour = 0;
                     hit();
                     loop();
                     return
-                } else if (message.content === "s"  || message.content.includes("Stand") || message.content.includes("stand")) {
+                } else if (message.content === "s"  || message.content.includes("S") ||message.content.includes("Stand") || message.content.includes("stand")) {
                     stand();
                     loop();
                     return
