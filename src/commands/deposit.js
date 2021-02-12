@@ -90,7 +90,7 @@ module.exports.run = async (bot, message, args) => {
         data.coinsInBank += parseInt(args[0]);
             let depamountembed = new MessageEmbed()
             .setColor("BLUE")
-            .setDescription(`${i} **${member.user.username}** : Deposited **${(args[0]).toLocaleString()}** coins.`);
+            .setDescription(`${i} **${member.user.username}** : Deposited **${parseInt(args[0]).toLocaleString()}** coins.`);
 
             await message.channel.send(depamountembed).catch();
         //await message.channel.send(`Deposited **${args[0]}** coins.`);
