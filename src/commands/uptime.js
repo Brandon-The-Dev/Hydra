@@ -13,7 +13,7 @@ module.exports.config = {
     usage: 'h uptime',
     botPerms: [],
     userPerms: [],
-    aliases: ['servers'],
+    aliases: [],
     bankSpace: 1,
     cooldown: 5
 }
