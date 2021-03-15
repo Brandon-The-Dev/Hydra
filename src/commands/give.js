@@ -88,7 +88,7 @@ module.exports.run = async (bot, message, args) => {
     const usertag = message.member;
     let sendcoinsembed3 = new MessageEmbed()
     .setColor("GREEN")
-    .setDescription(`${tick} ${usertag.user.username} : You gave ${member} **${parseInt(toGive).toLocaleString()}** coins.`);
+    .setDescription(`${tick} **${usertag.user.username}** : You gave ${member} **${parseInt(toGive).toLocaleString()}** coins.`);
     message.channel.send(sendcoinsembed3).catch();
     }
 
