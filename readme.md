@@ -2,8 +2,7 @@
 <center><a href="https://discord.gg/XqezQaK"><img src="https://media.discordapp.net/attachments/717671005941661747/776181978004717618/textfx_4.png"/></a></center>
 <br><br>
   <div align=center>
-    <a href="https://discord.gg/XqezQaK">
-    <img src="https://discordapp.com/api/guilds/687752327393837141/widget.png?style=shield" alt="shield.png">
+
   </a>
 
     
