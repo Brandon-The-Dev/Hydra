@@ -29,6 +29,7 @@
     "pretty-ms": "^7.0.0",
     "random-puppy": "^1.1.0",
     "node-superfetch": "^0.1.10",
+    "node": "12.x"
     "request": "^2.88.2"
   }
 }
