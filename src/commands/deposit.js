@@ -19,7 +19,14 @@ module.exports.run = async (bot, message, args) => {
             return message.channel.send(bankerrorembed).catch();
             //return message.channel.send("You don't have that much space in your bank. ");
         }
-          
+        
+        if (parseInt(withAmount) > data.coinsInWallet) {
+               let with3embed = new MessageEmbed()
+              .setColor("BLUE")
+              .setDescription(`${i} **${member.user.username}** : You do not have that many coins in your wallet.`);
+              return message.channel.send(with3embed);
+            //return message.channel.send('You do not have that much coins.');
+        }
           
           
             data.coinsInWallet = max_deposit;
