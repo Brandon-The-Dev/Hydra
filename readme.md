@@ -37,10 +37,12 @@ daily | Allows the users every 24 hours to claim a reward.
 deposit | Allows users to deposit some of there coins into there bank.
 dice | Allows users to make a bet and try win more back.
 dog | Posts a photo of a dog in that chat and you gain coins.
+fish | Use your fishing rod to catch fish.
 gamble | Allows users to make a bet and try win more back.
 gift | Allows users to send items to other users.
 give | Allows users to send coins to other users.
 help | Displays all the commands that are available.
+hunt | Use your rifle to hunt for animals.
 inventory | Displays all the items that are in a users inventory
 invite | Sends the invite for the bot.
 meme | Posts a meme in that chat and you gain coins.
