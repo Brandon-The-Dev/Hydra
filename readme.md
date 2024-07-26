@@ -28,6 +28,8 @@
 ### IF YOU JOIN THE SUPPORT SERVER AND THEN VOTE GET A FREE 10K COINS
 ### AFTER YOU VOTE (IN THE SUPPORT SERVER TYPE ) h vc
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/224fe37f2f1c304357e5e765bfb45bb6.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/059eaaf437fbcec38f95ab5dee1a4935.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src=""/></a></center>
 <br><br>
 
 Commands | Infomation
