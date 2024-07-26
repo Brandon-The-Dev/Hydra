@@ -1,6 +1,7 @@
 <div align=center>
+<center><a href="https://discord.gg/XqezQaK"><img src="(https://cdn.discordapp.com/attachments/717679562259169291/765985411364290610/cooltext365506671186888.png?ex=66a52a81&is=66a3d901&hm=3bf7bda8c77eddf3aedff1dca81206be90444fe4f0375037a67ce756540c68e0&)"/></a></center>
 26/07/2024 Bot Updated And Online
-<center><a href="https://discord.gg/XqezQaK"><img src="https://media.discordapp.net/attachments/717671005941661747/776181978004717618/textfx_4.png"/></a></center>
+
 <br><br>
   <div align=center>
 
