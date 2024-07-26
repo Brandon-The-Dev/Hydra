@@ -9,5 +9,5 @@ const EconomySchema = new mongoose.Schema({
     dailyStreak: { type: Date, required: false, default: new Date(Date.now() - 86400000) },
     passive: { type: Boolean, required: false, default: false }
 });
-
+// this is up today files still 
 module.exports = mongoose.model('economy', EconomySchema);
