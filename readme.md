@@ -19,7 +19,7 @@
 <center><a href="https://top.gg/bot/679710920334639115/vote"><img src="https://top.gg/api/widget/upvotes/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/>
 </a></center>
 <br><br>
-
+ 
 
 <br><br>
 ### You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
