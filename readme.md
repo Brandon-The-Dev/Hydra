@@ -1,5 +1,5 @@
 <div align=center>
-<center><a href="https://discord.gg/XqezQaK"><img src="(https://media.discordapp.net/attachments/717679562259169291/765985411364290610/cooltext365506671186888.png?ex=66a52a81&is=66a3d901&hm=3bf7bda8c77eddf3aedff1dca81206be90444fe4f0375037a67ce756540c68e0&=&format=webp&quality=lossless&width=461&height=121)"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/3b84349c34a5b9aaf6f88b4192143107.png"/></a></center>
 26/07/2024 Bot Updated And Online
 
 <br><br>
