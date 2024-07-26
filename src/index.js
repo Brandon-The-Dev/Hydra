@@ -11,6 +11,6 @@ bot.commands = new Collection();
 bot.aliases = new Collection();
 bot.cooldowns = new Collection();
 bot.dbl = dbl;
-
+ 
 require('./utils/handlers/command')(bot);
 require('./utils/handlers/event')(bot);
