@@ -30,6 +30,7 @@ module.exports.run = async (bot, message, args) => {
         
         bot.giveCoins(message.author.id, amount)
     };
+
 }
 
 module.exports.config = {
