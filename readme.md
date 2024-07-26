@@ -20,8 +20,8 @@
 
 <br><br>
 ### You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
-### You Can Also Join Our Server Here: [Invite](https://invite.gg/HydraBot)
-### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/679710920334639115/vote)
+### You Can Also Join Our Server Here: [Invite](https://discord.gg/XqezQaK)
+### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 <br><br>
 
 Commands | Infomation
