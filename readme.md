@@ -27,6 +27,7 @@
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 ### IF YOU JOIN THE SUPPORT SERVER AND THEN VOTE GET A FREE 10K COINS
 ### AFTER YOU VOTE (IN THE SUPPORT SERVER TYPE ) h vc
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/224fe37f2f1c304357e5e765bfb45bb6.png"/></a></center>
 <br><br>
 
 Commands | Infomation
