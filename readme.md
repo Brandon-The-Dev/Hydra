@@ -1,6 +1,7 @@
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/3b84349c34a5b9aaf6f88b4192143107.png"/></a></center>
-26/07/2024 Bot Updated And Online
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/75bb49193d42dadbb489a49953ac138f.png"/></a></center>
+
 
 <br><br>
   <div align=center>
