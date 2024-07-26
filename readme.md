@@ -8,9 +8,7 @@
 
   </a>
 
-    
 
-  
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://top.gg/api/widget/status/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=1A191A"/></a></center> 
 
