@@ -16,8 +16,7 @@
 <center><a href="https://discord.gg/XqezQaK"><img src="https://top.gg/api/widget/servers/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/></a></center>
 
 <center><a href="https://top.gg/bot/679710920334639115/vote"><img src="https://top.gg/api/widget/upvotes/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/>
-IF YOU JOIN THE SUPPORT SERVER AND THEN VOTE GET A FREE 10K COINS
-AFTER YOU VOTE (IN THE SUPPORT SERVER TYPE ) h vc</a></center>
+</a></center>
 <br><br>
 
 
@@ -25,6 +24,8 @@ AFTER YOU VOTE (IN THE SUPPORT SERVER TYPE ) h vc</a></center>
 ### You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
 ### You Can Also Join Our Server Here: [Invite](https://discord.gg/XqezQaK)
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
+### IF YOU JOIN THE SUPPORT SERVER AND THEN VOTE GET A FREE 10K COINS
+### AFTER YOU VOTE (IN THE SUPPORT SERVER TYPE ) h vc
 <br><br>
 
 Commands | Infomation
