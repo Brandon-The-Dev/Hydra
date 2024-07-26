@@ -19,8 +19,7 @@
 
 
 <br><br>
-### View Our Docs Here : [Website](https://docs.brandondev.xyz)
-### You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456) 
+### You Can Invite Hydra+ To Your Server Here: [Invite]([https://discord.com/oauth2/authorize?client_id=679710920334639115&scope=bot&permissions=19456](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot)) 
 ### You Can Also Join Our Server Here: [Invite](https://invite.gg/HydraBot)
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/679710920334639115/vote)
 <br><br>
