@@ -30,6 +30,8 @@
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/500ddd293a7d34d47c042fa0f0861be9.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://p82.cooltext.com/Rendered/Cool%20Text%20-%20After%20You%20Will%20See%20A%20Webhook%20For%20Your%20Vote%20Then%20Type%20h%20vc%20After%20462790226528179.png"/></a></center>
 <br><br>
+more commands have been added 
+
 
 Prefix |Commands | Infomation
 ------|-----------|------------
