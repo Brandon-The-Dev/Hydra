@@ -13,12 +13,14 @@
 <center><a href="https://top.gg/bot/679710920334639115/vote"><img src="https://top.gg/api/widget/upvotes/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/>
 </a></center>
 <br><br>
+
 ### You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
 ### You Can Also Join Our Server Here: [Invite](https://discord.gg/XqezQaK)
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/6617935dff281f1a4a7cadd948925b29.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/500ddd293a7d34d47c042fa0f0861be9.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://p82.cooltext.com/Rendered/Cool%20Text%20-%20After%20You%20Will%20See%20A%20Webhook%20For%20Your%20Vote%20Then%20Type%20h%20vc%20After%20462790226528179.png"/></a></center>
+
 <br><br>
 more commands have been added 
 
