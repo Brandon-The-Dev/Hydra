@@ -19,7 +19,7 @@
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/6617935dff281f1a4a7cadd948925b29.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/500ddd293a7d34d47c042fa0f0861be9.png"/></a></center>
-<center><a href="https://discord.gg/XqezQaK"><img src="https://p82.cooltext.com/Rendered/Cool%20Text%20-%20After%20You%20Will%20See%20A%20Webhook%20For%20Your%20Vote%20Then%20Type%20h%20vc%20After%20462790226528179.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/76a265a5befd948a2685c2ac8cd5e7e0.png"/></a></center>
 
 <br><br>
 more commands have been added 
