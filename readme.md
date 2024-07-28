@@ -21,8 +21,7 @@
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/76a265a5befd948a2685c2ac8cd5e7e0.png"/></a></center>
 
 <br><br>
-more commands have been added 
-
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/3cb1d5064109d3ba3a12e4348cad729b.png"/></a></center>
 
 Prefix |Commands | Infomation
 ------|-----------|------------
