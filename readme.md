@@ -18,7 +18,6 @@
 ### You Can Also Join Our Server Here: [Invite](https://discord.gg/XqezQaK)
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/6617935dff281f1a4a7cadd948925b29.png"/></a></center>
-<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/500ddd293a7d34d47c042fa0f0861be9.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/76a265a5befd948a2685c2ac8cd5e7e0.png"/></a></center>
 
 <br><br>
