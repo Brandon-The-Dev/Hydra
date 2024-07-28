@@ -1,6 +1,6 @@
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/ee6b36e0df503d9317f48ef9d858c749.png"/></a></center>
-<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/75bb49193d42dadbb489a49953ac138f.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/53af72d1930ec859d122edd2f115e376.png"/></a></center>
 
 
 <br><br>
