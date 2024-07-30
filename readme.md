@@ -70,7 +70,7 @@ h|withdraw|	Allows users to withdraw coins from their bank.
 h|work|	Allows users to work for coins.
 
 
-
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/022b4576b7598503018112bac9c2fd30.png"/></a></center>
 
 
 
