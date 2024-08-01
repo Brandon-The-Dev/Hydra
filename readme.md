@@ -20,6 +20,9 @@
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/6617935dff281f1a4a7cadd948925b29.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/76a265a5befd948a2685c2ac8cd5e7e0.png"/></a></center>
 all commands now have command log in your disried server channel id 
+Item axe has been updated to its own command h wood
+h leadercommands shows everyones total commands used on the bot
+h lb shows all users that use the bot whos got the most dosh 
 
 <br><br>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/1d06fbb7ea30f9c6b4aaaadb3c8c9e7d.png"/></a></center>
