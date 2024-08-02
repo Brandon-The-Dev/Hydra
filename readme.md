@@ -28,6 +28,11 @@ h lb shows all users that use the bot whos got the most dosh
 <br><br>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/br05Tr3.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/UFGSUuY.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/QzbqZuB.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/kpz72Pb.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/Kr4gwUc.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/aptNZVU.png"/></a></center>
+
 Prefix |Commands | Infomation
 ------|-----------|------------
 @|@Hydra Economy | Bot infomation.
