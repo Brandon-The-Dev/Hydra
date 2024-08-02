@@ -26,7 +26,7 @@ h lb shows all users that use the bot whos got the most dosh
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/76a265a5befd948a2685c2ac8cd5e7e0.png"/></a></center>
 
 <br><br>
-<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/1U86jVp.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/br05Tr3.png"/></a></center>
 
 Prefix |Commands | Infomation
 ------|-----------|------------
