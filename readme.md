@@ -27,7 +27,7 @@ h lb shows all users that use the bot whos got the most dosh
 
 <br><br>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/br05Tr3.png"/></a></center>
-
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/UFGSUuY.png"/></a></center>
 Prefix |Commands | Infomation
 ------|-----------|------------
 @|@Hydra Economy | Bot infomation.
