@@ -10,7 +10,7 @@
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://top.gg/api/widget/status/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=1A191A"/></a></center> 
 <center><a href="https://discord.gg/XqezQaK"><img src="https://top.gg/api/widget/servers/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/></a></center>
-<center><a href="https://top.gg/bot/679710920334639115/vote"><img src="https://top.gg/api/widget/upvotes/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/>
+<center><a href="https://top.gg/bot/735577260916080720/vote"><img src="https://top.gg/api/widget/upvotes/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=43b581"/>
 </a></center>
 <br><br>
 
