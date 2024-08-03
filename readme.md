@@ -23,7 +23,7 @@
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/6617935dff281f1a4a7cadd948925b29.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/76a265a5befd948a2685c2ac8cd5e7e0.png"/></a></center>
-all commands now have command log in your disried server channel id 
+all commands now have command log in your  server channel id 
 Item axe has been updated to its own command h wood
 h leadercommands shows everyones total commands used on the bot
 h lb shows all users that use the bot whos got the most dosh 
