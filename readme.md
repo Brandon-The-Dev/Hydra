@@ -1,6 +1,7 @@
 <div align=center>
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/7813f2bcfc72b170c395fa3d8803692c.png"/></a></center>
+  ### You Can Invite Hydra To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/ee6b36e0df503d9317f48ef9d858c749.png"/></a></center>
@@ -18,7 +19,7 @@
 </a></center>
 <br><br>
 
-### You Can Invite Hydra+ To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
+### You Can Invite Hydra To Your Server Here: [Invite](https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot) 
 ### You Can Also Join Our Server Here: [Invite](https://discord.gg/XqezQaK)
 ### You Can Vote For Hydra+ Here : [VOTE](https://top.gg/bot/735577260916080720/vote)
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/6617935dff281f1a4a7cadd948925b29.png"/></a></center>
