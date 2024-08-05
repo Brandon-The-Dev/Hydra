@@ -81,6 +81,14 @@ h|work|	Allows users to work for coins.
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/UFGSUuY.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/QzbqZuB.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/kpz72Pb.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/xbjcQjd.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/8daCmTO.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/LOTWNPN.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/E9hTApX.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/M8UEAri.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/VMVcQtt.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/QhGf7Rq.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/WhRsyDk.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/Kr4gwUc.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/aptNZVU.png"/></a></center>
 
