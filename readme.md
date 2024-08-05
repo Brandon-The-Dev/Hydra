@@ -91,7 +91,10 @@ h|work|	Allows users to work for coins.
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/WhRsyDk.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/Kr4gwUc.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/aptNZVU.png"/></a></center>
-
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/uue9KfM.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/ekiXX4X.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/1aYZiEr.png"/></a></center>
+<center><a href="https://discord.gg/XqezQaK"><img src="https://i.imgur.com/1Q23KUn.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/022b4576b7598503018112bac9c2fd30.png"/></a></center>
 
 
