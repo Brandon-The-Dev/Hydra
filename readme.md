@@ -10,7 +10,7 @@ https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&
   <div align=center>
   </a>
 <a href="https://top.gg/bot/735577260916080720">
-  <img src="https://top.gg/api/widget/735577260916080720.svg">
+  <img src="https://top.gg/api/widget/735577260916080720.svg"> 
 </a>
 <div align=center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://top.gg/api/widget/status/735577260916080720.svg?noavatar=true&leftcolor=1A191A&lefttextcolor=00CDCD&righttextcolor=1A191A&rightcolor=1A191A"/></a></center> 
