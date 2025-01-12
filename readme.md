@@ -1,8 +1,8 @@
 <div align=center>
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/7813f2bcfc72b170c395fa3d8803692c.png"/></a></center>
 https://discord.com/oauth2/authorize?client_id=735577260916080720&permissions=8&integration_type=0&scope=bot
-⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 
 
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/ee6b36e0df503d9317f48ef9d858c749.png"/></a></center>
 <center><a href="https://discord.gg/XqezQaK"><img src="https://i.gyazo.com/53af72d1930ec859d122edd2f115e376.png"/></a></center>
